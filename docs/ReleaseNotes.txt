@@ -1,0 +1,1060 @@
+**** 3.17.1 ****
+000 23/03/2017 - Dev Started
+001 23/03/2017 - [AR] BugFix: Custom field of YesNo type cause wrong display of other custom fields in the form (BLG)
+002 26/03/2017 - Improved handling of head-office controller restart
+003 26/03/2017 - BETA Released
+004 26/03/2017 - Server will not start if AutomaticUser does not have back office permissions
+005 27/03/2017 - BETA Released
+006 27/03/2017 - [AC] MiniBO functions at POS will not be available is the defined CenrtalDB is not the store database (MC 68215)
+007 28/03/2017 - BETA Released
+008 29/03/2017 - [AR] Support multiple logos on POS printer printing when using direct/WindowsRAW printer mode
+009 29/03/2017 - BugFix: Back office list windows do not load the default filter
+010 29/03/2017 - Added option to insert required comment to bill, after reason for bill void or item return was selected.
+011 29/03/2017 - BETA Released
+012 29/03/2017 - BugFix: Bill upload (release) notification to CH agent is triggered when an holded bill is being restored (VSO 702, 701?)
+013 29/03/2017 - BugFix: Bill void continues when original bill file is missing  (VSO 701)
+014 30/03/2017 - Added support for customer messages when subscription is used (MC 68404)
+015 30/03/2017 - Add multi language support for tblExecutiveMessages
+016 02/04/2017 - BETA Released
+017 02/04/2017 - Item barcodes list is limited to 15 barcodes
+018 02/04/2017 - [AR] BugFix: Merging of kit item and item with linked items improved (VSO 665)
+019 03/04/2017 - Added new back office permission for editing customer subscription details
+020 03/04/2017 - BETA Released
+021 05/04/2017 - [AR] Visualization of promotions activation lines on screen added (VSO 684)
+022 05/04/2017 - Field tblKeySetsKeys.fldParameter size changed to 50 (MC 6)
+023 05/04/2017 - Added support for sending scope values when printing back office reports from POS (MC 68405)
+024 05/04/2017-  Fixed issues in numeration ranges (MC 33788)
+025 05/04/2017 - BETA Released
+026 05/04/2017 - BETA Released
+027 09/04/2017 - BETA Released
+028 10/04/2017 - BugFix: Invoice printout is using customer identity name instead of first and last name (VSO 561)
+029 10/04/2017 - BETA Released
+030 12/04/2017 - BETA Released
+031 12/04/2017 - BETA Released
+032 19/04/2017 - BETA Released
+033 20/04/2017 - BugFix: Closed bill file is written with Status=Empty when bill print is requested but bill is not loaded (VSO 712)
+034 20/04/2017 - BETA Released
+035 25/04/2017 - [AC] Changed definition of config param 1224 "Require Customer On Each Bill" (MC 68849)
+036 25/04/2017 - Added new config param 1909 "Require Customer Min Amount" (MC 68849)
+037 26/04/2017 - [ER] Improved functionality for Cashdro5
+038 26/04/2017 - BETA Released
+039 26/04/2017 - Bug fixes and improvements in CHClub_Pfi
+040 26/04/2017 - BugFix: Card number field is hidden for CHePay value card issue for refund bill (VSO 773)
+041 26/04/2017 - BugFix: Incorrect window caption when issue A4S value card for refund (Scripts.txt)
+042 26/04/2017 - BETA Released
+043 27/04/2017 - BETA Released
+044 27/04/2017 - BETA Released
+045 03/05/2017 - Added option to print report to PDF file (by Bullzip), and option to send report by Email.
+046 03/05/2017 - New table tblExecutiveMessagesAttachements.
+047 03/05/2017 - Added option to send bill copy (as BO bill report) at end of bill at POS (by condition in tblExecutiveMessages).
+048 03/05/2017 - Added option to define condition for sending executive message .
+049 03/05/2017 - Option to add 3 different types of comments to bill: Bill, Fire and Reason comments.
+050 03/05/2017 - BETA Released
+051 03/05/2017 - BETA Released
+052 04/05/2017 - BugFix: Bill that is hold-on-server, is cancelled at end-of-day (MC 69664)
+053 04/05/2017 - BugFix: Error voiding CHePay EFT partial payment causes bill to disappear (VSO 776)
+054 07/05/2017 - BugFix: POSData.XML "ActiveBillNumber" property  is set to new number after if item adding to new bill is cancelled (MC 69665)
+055 07/05/2017 - Paymean validation added when setting bill type (MC 69703, VSO 680)
+056 08/05/2017 - BugFix: Paymean transactions written to DB with the value 'NULL' as the number (VSO 811)
+057 08/05/2017 - Improved validation for customer assignment (config parameters 102,1224,1909) (MC 68849)
+058 09/05/2017 - BETA Released
+059 09/05/2017 - BugFix: POS now prevents double activation of the same (on demain) promotion (VSO 761)
+060 10/05/2017 - BETA Released
+061 10/05/2017 - Parameters value conversion for customer assignment parameters (config parameters 102,1224) (MC 68849)
+062 10/05/2017 - BETA Released
+063 11/05/2017 - Improved parameters value conversion for customer assignment parameters (config parameters 102,1224) (MC 68849)
+064 11/05/2017 - New parameter: LateItemReturnDays 
+065 11/05/2017 - Write to the POS parameters values file(ConfigDump.Log)
+066 11/05/2017 - BETA Released
+067 14/05/2017 - BugFix: POS sometimes blocked on cashier break entery which was shown on POS loading
+068 14/05/2017 - BETA Released
+069 14/05/2017 - API method MarkTransferedBill not to mark bill as transafered if bill is closed (VSO 707,VSO 656, VSO 800)
+070 14/05/2017 - Server import of BIL DC record will update ZCounter in DB for bill which was on hold from a previous ZCounter (VSO 707)
+071 14/05/2017 - BugFix: Rounding discount (or other discount) not always distributed on sale lines causing unbalanced bill (VSO 836)
+072 14/05/2017 - BETA Released
+073 14/05/2017 - BugFix: CHClub_Pfi - not checking references in fixed discount lines (VSO 827)
+074 15/05/2017 - BugFix: Coupon image is not printed when PrinterMode is set to "Windows (Graphics)" (VSO 644)
+075 16/05/2017 - BugFix: Discount POS function does not check for invalid reward types (VSO 853)
+076 16/05/2017 - BETA Released
+077 16/05/2017 - BugFix: Deposit didn't work because of bill reloading
+078 17/05/2017 - BugFix: Error 53 "CustomerNotFound" when adding new customer at POS
+079 17/05/2017 - BugFix: Call for IWsbService.StartBillUpload might cause the POS to be blocked (VSO 794)
+080 17/05/2017 - BugFix: Filter box in back office categories list is not displayed properly (MC 70056)
+081 17/05/2017 - BETA Released
+082 21/05/2017 - BugFix: Refund line can be voided more then once (VSO 508, MC 70058)
+083 21/05/2017 - BugFix: Marking item as deleted does not check DeleteItem permission (MC 69878)
+084 21/05/2017 - BETA Released
+085 22/05/2017 - Added pos number proprty to CH Pfi Redeem coupon process (VSO 893)
+086 23/05/2017 - BugFix: Exception at server upon loading orders at POS (BLG)
+087 23/05/2017 - BugFix: on Bill.Reload (subtotal) - Finish was called if EOBStep was not 0
+088 24/05/2017 - BugFix: Transfered bill status changed to 'Open' after it was opened by the original POS (MC 69887)
+089 24/05/2017 - BETA Released
+090 24/05/2017 - BugFix: Distribution information not complete in DB due to wrong ordering of DC records (VSO 864)
+091 25/05/2017 - BETA Released
+092 28/05/2017 - BugFix: BO List now always updated as needed when using cell drop-down selection
+093 28/05/2017 - BETA Released
+094 28/05/2017 - Improved head-office sync validation of workdays
+095 28/05/2017 - BugFix: Head-office does not sync tblItems.fldLastSaleDate (MC 70288)
+094 28/05/2017 - Head-office controller displays event logs in tab "Log"
+095 28/05/2017 - BugFix: Fire comment should not have multi line entry
+096 28/05/2017 - BETA Released
+097 30/05/2017 - BETA Released
+098 01/06/2017 - BugFix: Option added to search customer order by delivery date (BLG)
+099 01/06/2017 - Deleted catalog item can be restored by barcode (MC 70185)
+100 01/06/2017 - Head-office controller can run for stores configured as non Syncable
+101 01/06/2017 - BETA Released
+102 04/06/2017 - BugFix: POS declaration report is missing some amounts when cash paymean group flag "Declare per group" is true (MC 70251)
+103 05/06/2017 - BugFix: POS customer display panel does not display the correct customer balance (MC 70476)
+104 05/06/2017 - BETA Released
+105 05/06/2017 - Auto fire comment entry moved from bill closing (after payments) to first payment in the bill
+106 06/06/2017 - Option added to always hide full credit card number on signatre ticket (Scripts.txt) (SVA)
+107 07/06/2017 - BETA Released
+108 08/06/2017 - Reordering of TR (DC) records removed - records are written by the the lines were added to the bill (VSO 864)
+109 08/06/2017 - BugFix: POS Bill print to PDF shows '|N' character at end of bill lines
+110 08/06/2017 - BETA Released
+111 08/06/2017 - Back-office lists support zoom in/out using ctrl + mouse wheel
+112 11/06/2017 - BETA Released
+113 11/06/2017 - Improved support for cibus Sodexo
+114 12/06/2017 - BETA Released
+115 12/06/2017 - BugFix: POS declaration uses paymean name for paymean group when declaration is done by grouping (MC 70251)
+116 12/06/2017 - Load customer quick message as part of data retrieved in GetCustomerInfo in CH API (VSO 732)
+117 12/06/2017 - BugFix: Manual export for Comax export ignored previously exported workdays (MC 70833)
+118 12/06/2017 - BugFix: Clearing cell in PAList control does not raise CellTextModified event (MC 70459)
+119 12/06/2017 - Improved fast filter functionality of options list  (MC 70607)
+120 13/06/2017 - BugFix: tblHQSyncLog table is not cleaned in the store database (MC 70858)
+121 14/06/2017 - BETA Released
+122 15/06/2017 - Export employees ID number to Michpal
+123 15/06/2017 - Mouse double-click in back office selection lists will close the list and return the selected value
+124 15/06/2017 - Improved support for external Israeli value cards
+125 15/06/2017 - Improved support for offline value cards issue
+126 18/06/2017 - BugFix: Bill lines merging may cause lines not to be displayed (VSO 760)
+127 18/06/2017 - Added validation of export folder for end-of-day sales export and accountancy export (MC 70986)
+128 18/06/2017 - BETA Released
+129 18/06/2017 - Back-office query results support zoom in/out using ctrl + mouse wheel
+130 21/06/2017 - add option to export time attendance to dates range and not only for a full month
+
+**** 3.17.2 ****
+001 19/06/2017 - [AC] Head-office sync will not validate workdays that have credit card transactions that were not transmited
+002 20/06/2017 - [AC] Improved head-office closed workday validation (MC 71051) (Scripts.txt)
+003 20/06/2017 - [AC] BugFix: Can not add new customer order in back office
+004 20/06/2017 - [AC] Improved functionality of changing back-office lists display font size
+005 20/06/2017 - [AR] Finger printing initializion is skipped when back-office object is created at server
+006 20/06/2017 - [AC] Improved functionality of using subscriptions at POS (MC 71114)
+007 20/06/2017 - [AR] Improvements in COMAX export (Merge rounding paymean, export of discounts etc.)
+008 21/06/2017 - [AR] BugFix: End of bill promotion calculated on brutto regardless to configuration if customer assinment at EOB was canceled (VSO 966)
+009 22/06/2017 - [AC] Stock document execute in head office system will mark store workday as not validated (MC 71137)
+010 22/06/2017 - [AC] Creating invoice in head office system will mark store workday as not validated (MC 71137)
+011 22/06/2017 - [AR] Buttons bar in BO GUI not always in the correct position/size
+012 22/06/2017 - [AR] Merging of items on back-printer bons improved
+013 25/06/2017 - [AR] Direct drawer hardware mode added to support USB/Serial drawers 
+014 25/06/2017 - [ER] Added option to export time-attendace shifts/entries for selective dates
+015 25/06/2017 - [AR] BugFix: Subscription items given with no/special price due to the subscription should not be included in substitute price promotions
+016 25/06/2017 - [AC] BugFix: Can not send SMS messages to numbers with '-' (MC 71173)
+017 26/06/2017 - [AC] In head-office system, item code change can be used only in head-office and not in local store (MC 71194)
+018 26/06/2017 - [AC] Head-office sync will check for item code changes (MC 71194)
+019 26/06/2017 - [AC] Server import of DC file will check for item code changes (MC 71194)
+020 26/06/2017 - [AC] Back-office query results support zoom in/out using ctrl + mouse wheel
+021 27/06/2017 - [ER] BugFix: Prevention of double call to CH coupons validation if bill closing failed on first attempt (VSO 994)
+022 27/06/2017 - [AC] Improved perfomance in POS bills list
+023 27/06/2017 - [AR] New POS function 'Trace promotion added - can be used to check the reason preventing a specific promotion from being activated
+024 29/06/2017 - [AC] Improved support for map route display in back-office and POS
+025 29/06/2017 - [ER] Add TransactionValue property to Redeem function in CH Club API
+118 29/06/2017 - [AR] BugFix: WebShop API GetAttributeInfo does not return element name 
+119 04/07/2017 - [AR] BugFix: Kit child items prices not loaded to the sale line on the 1st sale line in the bill (VSO 854)
+120 04/07/2017 - [AR] BugFix: After voiding kit item partial quantity, lines are not merged (VSO 856)
+121 05/07/2017 - [AR] BugFix: Item price not displayed on customer screen/display when non weighable item is sold on a WP (BLG)
+122 05/07/2017 - [ER] Executive messages support custom message subject for emails (MC 71568)
+123 05/07/2017 - [AR] BugFix: POS now prevents user from continuing the bill while CCV transaction is in progress (Scripts.txt) (BLG)
+124 06/07/2017 - [AC] Implemented end-of-week and end-of-month executive messages (MC 71593)
+125 06/07/2017 - [AC] BugFix: Payments with external value cards might cause server import error 
+126 06/07/2017 - [AC] POS training mode supports external value cards
+127 06/07/2017 - [AR] BugFix: Items with linked items (like kits) are not merged if no promotions exists in the system (VSO 856)
+128 06/07/2017 - [AR] BugFix: LockByLine ByPrio lock did not work correctly (VSO 1023, 1027)
+129 09/07/2017 - [AC] BugFix: Missing translation for customer order "Delivery" button
+130 09/07/2017 - [AC] BugFix: Error in back office when adding new reason to reason set
+131 09/07/2017 - [ER] Remove option to configure old promotions system
+132 09/07/2017 - [AC] BugFix: ".upload" is not created if bill barcode is scanned while bill is still on display (VSO 1053)
+133 13/07/2017 - [AC] Back-office list filtering supports "In" comparer for field type Options (MC 71808)
+134 13/07/2017 - [AR] Improved performance of promotions system when locks are NOT defined in the system
+135 13/07/2017 - [AC] Improved support for report parameters from executive messages (MC 71593)
+136 13/07/2017 - [AR] BugFix: LogoCreator in ProfitAgeTools exception while loading a logo which is already Monochrome
+137 16/07/2017 - [AC] Added support for transmitting EFT for multiple terminals
+138 16/07/2017 - [AR] BugFix: Customer expiration date not set by group expiration method when created from Back Office GUI
+139 17/07/2017 - [AR] BugFix: Bill sub-total resets delivery details that were entered before bill finish (MC 71995)
+140 18/07/2017 - [AR] New option added in subscription type to allow/prevent change of customer subscription when subscription value is zero
+141 18/07/2017 - [AR] Manual export for Comax will create daily totals 'spidyon' file (MC 72041)
+142 18/07/2017 - [AR] BugFix: Unbalanced bill caused by voiding a discount after pressing subtotal (Static subtotal mode) (VSO 1089)
+143 19/07/2017 - [ER] Implement FTPService class to upload files to ftp as a background process
+144 19/07/2017 - [ER] Implement upload of daily backup to ftp using ftp service
+145 19/07/2017 - [ER] Implement upload of accountancy export files to ftp
+146 19/07/2017 - [ER] Add X/Z report informative "total customers balance"
+147 19/07/2017 - [AC] BugFix: In back office windows, option MORE in toolbars will not work by keyboard if window is in view mode (MC 72075)(AC)
+148 19/07/2017 - [AR] BugFix: Incorrect void quantity for linked items (VSO 1082)
+149 19/07/2017 - [AR] System events categories added (can be used to group/filter several related events) - No editing by user possible
+150 19/07/2017 - [ER] Support export of ESL for other stores
+151 19/07/2017 - [AR] BugFix: Rounding discount not to be affected by parameter 'Promotions rounding' (VSO 1093)
+152 20/07/2017 - [AR] Changes in promotion target quantity, promotion start time and promotion end time - BO GUI
+153 20/07/2017 - [AR] BugFix: Promotion locked against another promotion is not added to the bill even after voiding the locking promotion (VSO 1106)
+154 20/07/2017 - [ER] BugFix: Reverse Hebrew in export to accountancy was done in a wrong way
+155 23/07/2017 - [AC] BugFix: Error in head-office sync after executing overall stock counting (MC 72147)
+156 23/07/2017 - [AC] Accountancy EOD export will be called if workday is closed when POS Z is closed (MC 72041)
+157 23/07/2017 - [ER] BugFix: Accountancy file KUPAIN wrong values (MC 72252)
+158 23/07/2017 - [AC] Prevent stock counting execution in local store if one of the counting warehouse is not local (MC 72205)
+159 25/07/2017 - [AC] Improved error message in PATools upgrade
+160 25/07/2017 - [AC] BugFix: Upgrade of parameter values caused error in PATools upgrade process
+161 25/07/2017 - [AC] Comax import items checks for VAT codes (MC 72218)
+162 25/07/2017 - [AR] BugFix: Prevent exception caused by multi threads loading translation strings at POS
+163 26/07/2017 - [AC] Server import of EOD record will close all open sessions with a non zero cashier (MC 72059)
+164 26/07/2017 - [ER] Support car license number with 8 digits (Israel)
+165 26/07/2017 - [AC] BugFix: In head office simple counting document is saved with store number of head office store and not warehouse store (MC 72205)
+166 30/07/2017 - [AR] BugFix: Promotion defined on given amount wrongly calculated when partial quantity is voided (VSO 710)
+167 30/07/2017 - [ER] Add POS function for subscription query/load/use (MC 72461)
+168 30/07/2017 - [AR] OPOS scanner disabled when POS message dialog is shown (VSO 1074)
+169 30/07/2017 - [AC] Improved error handeling for import items (MC 72309)
+170 30/07/2017 - [ER] BugFix: Wrong discounts distribution in closed bill caused unbalanced bill on void (VSO 1084)
+171 31/07/2017 - [ER] Disable OLS IpChk
+172 31/07/2017 - [ER] Support export of cash to accountancy as 1 summerized line
+173 01/08/2017 - [AC] Automatic comax export will not upload file DC files if export was already done for workday (MC 72257)(Scripts.txt)
+174 01/08/2017 - [AC] Manual comax export will request user feedbak if export was already done for workday (MC 72257)(Scripts.txt)
+175 01/08/2017 - [AC] BugFix: Creating invoice causes error the first time (MC 72423)
+176 01/08/2017 - [AR] Wrong points distribution when points promotion has amount target (and not quantity target) (VSO 710)
+177 01/08/2017 - [AC] External value cards take input amount when used with magnetic card
+178 03/08/2017 - [AR] Improvements in SVA EMV (ISR) interface - EMV approval!
+179 06/08/2017 - [AC] BugFix: Counting document is not initiated after document was downloaded from head office (MC 72522)
+180 06/08/2017 - [AR] BugFix: Cannot add manual discount on sale line after voiding partial quantity and the discount (VSO 536)
+181 06/08/2017 - [ER] Load BOEntities default value for customer, customer identity allow SMS field
+182 07/08/2017 - [AC] BugFix: EFT transmission at workday opening displays wrong message text (MC 72756)
+183 08/08/2017 - [AC] Added store selection for comax manual export (MC 72257)(Scripts.txt)
+184 08/08/2017 - [AC] Open Z counters of back office terminals will be closed at store close workday process (MC 72765)
+185 08/08/2017 - [AC] BugFix: Head office execute for counting document fills data table tblStockCountingsSummary (MC 72522)
+186 09/08/2017 - [AC] BugFix: Simple counting document does not always initiate data table tblItemsSerialNumbers
+187 09/08/2017 - [AC] Changed size of data field tblPromotionsLabelingInfo.fldValue (MC 72000)
+188 09/08/2017 - [AC] BugFix: Error executing complex stock counting after a second document was added (MC 72522)
+189 13/08/2017 - [AR] SHVA EMV EFT release
+190 13/08/2017 - [AR] Wrong cost price set to item after execute of stock document with multiple lines for the same item
+191 13/08/2017 - [AC] BugFix: Error when printing 2 labeling batches of different layouts
+192 13/08/2017 - [ER] EOD process form is automatically hidden if another dialog needs to be displayed
+193 14/08/2017 - [AC] Improved head office tables upload (MC 72676)
+194 14/08/2017 - [AC] BugFix: Execution of stock counting does not update data field tblDataDaily.fldExportTS
+195 14/08/2017 - [AR] BugFix: Multiple corrections of CH coupons at EOB (VSO 1084)
+196 15/08/2017 - [AR] New parameter added to require accounting code for each customer using customer credit
+197 17/08/2017 - [AR] BugFix: Replication host fails to accept new connections (sockets) if the service was immidiately stopped and restarted (VSO 1073)
+198 17/08/2017 - [AR] BugFix: Voiding of coupon line does not exit static subtotal mode (VSO 1152)
+199 17/08/2017 - [AR] BugFix: Voided coupon line which is hidden due to lines merging is still printed (VSO 1153)
+200 17/08/2017 - [AR] Clipboard support added in POS main screen (Ctrl-C, Ctrl-V)
+201 20/08/2017 - [ER] BugFix: Z open/close time was set according to server import date+time instead if DC record date+time
+202 21/08/2017 - [ER] Add option to filter WEB app list reports by store also in 'POS represents store' mode
+203 21/08/2017 - [ER] Add option to filter WEB app bills by store also in 'POS represents store' mode
+204 21/08/2017 - [ER] Add option to show data by months in WEB app
+205 21/08/2017 - [AC] BugFix: "Serials" toolbar button is not working in Stock counting document (MC 73323)
+206 22/08/2017 - [AR] BugFix: Duplicate of item from items pick-list (not catalog form) does not copy the item(s) customer fields (BLG)
+207 22/08/2017 - [ER] BugFix: Error adding discounts as automatic as part of Pfi club and SST (VSO 1154)
+208 23/08/2017 - [AC] Added back office permission "Force store workday closing" (MC 73121)(Scripts.txt)
+209 23/08/2017 - [AC] Back office close workday process will check user permission if POS terminals are not connected (MC 73121)
+210 23/08/2017 - [AC] BugFix: EFT error is displayed when workday is closed by remote
+211 23/08/2017 - [AR] BugFix: Exception when printing accounting document with print preview
+212 23/08/2017 - [AR] Several BO lists (with checkboxes enabled) caused DB access for each record
+213 24/08/2017 - [AC] Stock counting initiate will cause head office items stock sync (MC 73447)(Scripts.txt)
+214 24/08/2017 - [ER] BugFix: Error handling exception raised by cashdro
+213 24/08/2017 - [AC] BugFix: POS uses incorrect amount for for magnetic value cards when config param "ManualDecimalAmount" (1135) = True
+214 27/08/2017 - [AC] BugFix: POS does not display MiniBO reports is server was strated more then 3 days ago (MC 73432)
+215 27/08/2017 - [AC] BugFix: POS displays multiple errors for items label printing
+216 27/08/2017 - [AR] BugFix: Bill is restored from hold on next item scan if it was placed on hold in subtotal mode (SST) (VSO 1193)
+217 28/08/2017 - [AR] BugFix: Replication host fails to accept new connections (sockets) if the service was immidiately stopped and restarted - more fixes (VSO 1073)
+218 28/08/2017 - [AR] BugFix: Accountancy totals export details wrongly written in Hebrew
+219 29/08/2017 - [AC] BugFix: POS can not find historic bill after it was transfered to another terminal
+220 30/08/2017 - [AC] Back office report duplication supports duplication of sub reports
+221 31/08/2017 - [AR] BugFix: Duplicate of item from supplier's items pick-list (not catalog form) does not copy the item(s) customer fields (BLG)
+222 03/09/2017 - [AC] BugFix: POS can not find historic bill from another terminal
+223 04/09/2017 - [AR] BugFix: Automatic discount added during subtotal mode prevents cancelation of subtotal mode in case of bill continuing (VSO 1172)
+224 05/09/2017 - [AR] Language of POS operation is now passed to all CH coupon API functions (VSO 1213)
+225 06/09/2017 - [AC] Added support for defining more then one stock counting in head office system
+226 06/09/2017 - [AR] Remote BO could not display journal file of a bill if opentime is different than workday
+227 07/09/2017 - [AR] BugFix: Not possible to void value-card which is marked to prevent bill void/cancel even if the value card was voided (VSO 994)
+228 10/09/2017 - [AR] BugFix: Customer stays assigned if rejected by club interface (VSO 1207)
+229 12/09/2017 - [AC] BugFix: Active bill is not put on hold when a barcode of closed bill is scanned (VS 1232)
+230 12/09/2017 - [AC] BugFix: POS startup sometimes displays cashier break dialog instead of embedded window (VS 1220)
+231 12/09/2017 - [AC] Improved logging for PATools data export process
+232 12/09/2017 - [AC] Improved handeling of external value cards initiation
+233 14/09/2017 - [AR] BugFix: Drawer opening at EOB returned to its original timing - after bill added inputs and bill comment entry (VSO 1214)
+234 14/09/2017 - [AR] BugFix: Upon voiding a merged sale line, item price is not taken into account when calculating maximum quantity to be voided (VSO 1121)
+235 14/09/2017 - [AR] BugFix: New parameter added (1905) to allow using instore-batch instance as Vendor ID
+236 17/09/2017 - [AR] BugFix: Promotion not applied on all items if line was voided in the middle of the bill (BLG)
+237 17/09/2017 - [ER] BugFix: Export payments to accountancy did not export negative amount cheques (MC 74296)
+238 18/09/2017 - [AC] BugFix: Back office edit of POS menu does not use pick list to select parameters for POS function
+239 19/09/2017 - [AC] BugFix: Stock counting is not initiated after sync from head-office (MC 74152)
+240 24/09/2017 - [AR] BugFix: Leading zeros removal was handled wrongly at POS and BO
+241 24/09/2017 - [AR] BugFix: Option added to scan customer card barcode inside BO customers list to locate the customer
+242 25/09/2017 - [AR] BugFix: Discount not always displayed in the bill (even if calculated) in rare situation (VSO 1266)
+243 25/09/2017 - [AR] BugFix: Promotions locking by line wrongly use total discount amount instead of the relative amount on each (VSO 1264)
+244 25/09/2017 - [ER] BugFix: Storenext export EDI number not in correct location
+245 25/09/2017 - [ER] BugFix: SMS message max length fixed
+246 25/09/2017 - [ER] Improvements in Simply-Club interface, allowing multi-rewards and rewards selection
+247 26/09/2017 - [ER] BugFix: In customers list - hide customers from locked ground
+248 27/09/2017 - [AR] BugFix: Exception at POS promotions printing/display due to multiple promotions added at once with the same priority (VSO 1290)
+249 28/09/2017 - [AC] BugFix: Mouse clicks in PAList rows are detected and column width change (MC 74678)
+250 01/10/2017 - [AC] BugFix: Back office lists are not setting columns width correctly when zoom value is not default (MC 74678)
+251 02/10/2017 - [AC] BugFix: Head office workday validation does not check changes in tblDataCreditCards.fldReference (MC 74833)
+252 02/10/2017 - [AC] BugFix: Opening a workday that was previously closed does not update tblWorkDays.fldHQUploadState (MC 74833)
+253 02/10/2017 - [AC] Added support for deleting stock counting in head office system (MC 74527)
+254 03/10/2017 - [AR] BugFix: Exception on promotion creation
+255 04/10/2017 - [AC] BullZip task will be killed after ussage
+256 08/10/2017 - [ER] BugFix: POS key definition did not support instore code and general item (MC 74942)
+257 10/10/2017 - [AR] BugFix: Printing to PDF timeout extended
+258 11/10/2017 - [AC] BugFix: Report PDF printing deletes all previous PDF files (MC 74598)
+259 15/11/2017 - [ER] Possibility to export catalog lookup file to ProfitAge Mobile android app
+260 15/10/2017 - [ER] Improvements in interface with Simply-Club
+261 15/10/2017 - [AR] BugFix: Bill unbalanced after voiding a line which is influensed by other bill lines (VSO 1287)
+262 17/10/2017 - [AC] Improved head-office performance of retrieving fields structure (MC 75152)
+263 17/10/2017 - [AC] BugFix: Added tables tblTransDistribution tblTransPoints to head office sync (MC 75153)
+264 17/10/2017 - [AC] BugFix: Back office ROA operation is included in customer total invoice when 'Ignore ROA' flag is checked (MC 74959)
+265 18/10/2017 - [ER] BugFix: InvoiceReceipt receipt is printed even if parameter "Enable receipts" is set to false
+266 19/10/2017 - [ER] Improvements in interface with Simply-Club
+267 24/10/2017 - [AR] BugFix: In static subtotal (SST) is set, cancelation of payment after EOB discount were added cause the EOB discounts to be written twice (VSO 1368)
+268 24/10/2017 - [AR] ProfitAge server starts service automatically upon execution of ProfitAgeServer.exe
+269 25/10/2017 - [AR] Improved performance in Accountancy export procedure (double mode)
+270 31/10/2017 - [AR] Total quantity in bill is incorrect when voiding a bill which was sold in the bill with and without line discounts (VSO 1396)
+271 02/11/2017 - [AR] BugFix: Line discount not voided after voiding an item which was partially voided before (and merged) (VSO 
+272 02/11/2017 - [AR] BugFix: Improved voided line writing into bill file (VSO 1322)
+273 07/11/2017 - [ER] Add posibility to import stores orders from ProfitAge mobile app in headoffice
+274 07/11/2017 - [ER] BugFix: Sale of kit item with loading of unrounded prices (when system rounds amounts) cause unbalanced bill (VSO 1423)
+275 08/11/2017 - [AR] BugFix: Database object initialization fails if replication is not configured correctly (VSO 1330)
+276 09/11/2017 - [ER] BugFix: Could not add DDFields with big ID to stores status form
+277 09/11/2017 - [AR] BugFix: Database integrity tool improvement
+278 12/11/2017 - [AC] Added new field  tblDataBills.fldWorkday
+279 15/11/2017 - [AC] BugFix: Magnetic card key is saved and read with empty characters (MC 76476)
+280 15/11/2017 - [AC] BugFix: Declaration report does not print foreign currency information (VSO 1225)
+281 16/11/2017 - [AC] Improved BO menu edit permissions error message (MC 76552)
+282 19/11/2017 - [ER] BugFix: HQLink deleted local records if customer assigned very fast after creation in POS
+283 19/11/2017 - [ER] BugFix: POS shelf label did not take pricelist price
+284 20/11/2017 - [AR] New POS function (Change table) to enable switching (resturante) table of a bill
+285 20/11/2017 - [AR] New POS permissions added (Item query & Bill restore)
+286 21/11/2017 - [AC] Added posibility to import stock documents from ProfitAge mobile app
+287 23/11/2017 - [AR] BugFix: Customer consignment in subtotal mode cause the customer to be re-displayed on the screen (VSO 1346)
+288 23/11/2017 - [AR] BugFix: Lines merging incorrect after adding line discounts (VSO 1398)
+289 23/11/2017 - [AR] BugFix: Lines merging incorrect after voiding a line which has line disocunt on it (VSO 1398)
+290 23/11/2017 - [AR] BugFix: Fixes in promotion of type 'Percent on qty of lowest'
+291 23/11/2017 - [AR] BugFix: Primary key not created for service items departments table at system upgrade (VSO 1330)
+292 23/11/2017 - [AC] BugFix: Z-Report journal transaction section is devided when paymean configured in CSHPAY belongs to a different paymean group (VSO 1315)
+293 23/11/2017 - [ER] BugFix: Stock document loaded from stock order did not load correct prices if store has pricelist
+294 26/11/2017 - [AR] Limit tech user password change upon upgrade to ISR customers only
+295 26/11/2017 - [AR] BugFix: Table change at POS (Minimal resturante system) bug fixed
+296 26/11/2017 - [AR] Ini files upgrade on ISR systems only to increase number and size of log files defaults
+297 26/11/2017 - [AR] New fields in promotions (Init date and Update user)
+298 26/11/2017 - [AR] BugFix: Un-needed rest tables queries done by server removed in Minimal tables system mode
+299 27/11/2017 - [AC] Added posibility to import stock orders from ProfitAge mobile app
+300 27/11/2017 - [ER] BugFix: Could not print bill
+301 28/11/2017 - [AC] Added external utility to support android terminal functionality in older versions (AndroidAppUtility)
+302 28/11/2017 - [ER] BugFix: Time Attendance employees list 'enter' in fast filter opened hours of employee
+303 28/11/2017 - [ER] BugFix: Error when printing shelf label from query form
+304 29/11/2017 - [AR] Database structure checks replaced in Upgrade procedure and other parts of the SW
+305 29/11/2017 - [AR] Items automatic numbering (code) improved in order to select valid code for weighable items (if instore-code adds code check digit)
+306 30/11/2017 - [AC] Added support for sodexo (cibus) company cards
+307 03/12/2017 - [AR] BugFix: Printing of BO reports fails if printer is shared printer on another PC
+308 04/12/2017 - [AC] BugFix: RequestBillsUpload is not called for the active bill if bill barcode is scanned for a bill that is not available in the local machine (MC 77264 VSO 1483)
+309 05/12/2017 - [AR] Employees entry/exit on POS disabled in training mode
+310 06/12/2017 - [AR] BugFix: Automatic marking of historical workdays as 'closed' not working on re-opened workdays
+311 07/12/2017 - [AR] BugFix: ESL export columns headers now added in Standard ESL type (BLG)
+312 07/12/2017 - [ER] BugFix: Cannot show weekly data in employees shifts form
+313 07/12/2017 - [AC] Improved error handeling and logging message for EOD process (MC 77288 VSO 1459)
+314 07/12/2017 - [AC] Improved handeling of advert files display (VSO 1491)
+315 07/12/2017 - [AC] BugFix: Non-reward discounts cause unbalance bills if bill is voided
+316 10/12/2017 - [AR] New POS permission added for bill cancel after FIRE
+317 10/12/2017 - [AR] BugFix: On automatic printing of bill upon bill hold - user permission validation is now skipped
+318 10/12/2017 - [AC] BugFix: Item price can be changed in back office or POS in head office system
+319 11/12/2017 - [ER] BugFix: Possible to consign customer after adding manual points to the bill
+320 12/12/2017 - [AC] Improved error log messages for executing SQL queries
+321 13/12/2017 - [AR] BugFix: Improved upgrade procedure from very old versions to eliminate exceptions (VSO 1330)
+322 13/12/2017 - [ER] Make SVA EMV work faster
+323 14/12/2017 - [AR] BugFix: POS cannot start if instore batch file is corrupted
+324 14/12/2017 - [ER] BugFix: Error executing stock document with items linked to items with long code
+325 17/12/2017 - [AR] BugFix: CashDro Cash-dispenser wrong handling of current balance query exceptions
+326 18/12/2017 - [AR] BugFix: Pressing twice EC (Error Correct) on a line when system is configured with following lines merging cause sale line of zero quantity
+327 21/12/2017 - [AC] Stock document will not be executed if the entry date is earlier then the value date of an existing in-process counting for the same store (MC 78000)
+328 21/12/2017 - [AC] BugFix: Stock document can be added without entry date
+329 24/12/2017 - [AR] BugFix: {S} placeholders remain visible in minimized resturante tables TS keys
+330 24/12/2017 - [AR] Option added to print barcode field(s) in BO form report
+331 25/12/2017 - [ER] Notify promotions with priority same as club discounts on POS init
+332 27/12/2017 - [ER] BugFix: Terminal init error if GetOleDbSchemaTable doesn't work
+333 27/12/2017 - [AR] BugFix: Extra (empty) back printers bons printed with no items
+334 28/12/2017 - [ER] BugFix: Release barcodes from deleted items when assigning the barcode to a new item
+335 28/12/2017 - [AR] BugFix: Coupon caption is cut incorectly if the text is too long (HEB only)
+336 28/12/2017 - [AR] Improvements in line voiding with and without linked line discounts (VSO 1478)
+337 28/12/2017 - [AR] BugFix: Discount requiring coupon not always copied with the sale line in case of bill lines copy (VSO 1044)
+338 31/12/2017 - [ER] BugFix: Delete records from counting summary before execute
+339 31/12/2017 - [AC] Added validation for line amount in comax transaction export (MC 77757)
+340 31/12/2017 - [AR] BugFix: On subtotal function, currently loaded bill is now cleared (unloaded) if it is not OPEN
+341 01/01/2018 - [AR] BugFix: Exception on SVA EMV EFT ticket printing if phone number is included in the printout
+342 02/01/2018 - [AR] Improved logging of potential problems in SVA EMV interface (POS+Server)
+343 02/01/2018 - [AC] BugFix: Error in server backup file copy causes delay in head office sync process (MC 78550)
+344 02/01/2018 - [ER] Days to suggest ROA - implement also in customer assignment process other than pressing 'assign customer' button (MC 78559)
+345 03/01/2018 - [AR] BugFix: Scanning promotion barcode immidiately after loading an instore batch was not possible
+346 04/01/2018 - [AR] BugFix: Uncomplete promotion data in database after promotion's import by ProfitAgeTools
+347 04/01/2018 - [AR] BugFix: Back printer not printing by POS if the printer is not directly assigned to the POS (if value is NULL)
+348 04/01/2018 - [AR] BugFix: Promotion of type 'qty in given amount' wrongly distribute the discount if marked 'mark all as rewarded' (MC 68161)
+349 07/01/2018 - [AR] BugFix: Exception when saving department with too many service items
+350 07/01/2018 - [AC] BugFix: When scanning value card with use mode "Unload" the POS uses all the card loaded balance (MC 78695)(BLG)
+351 08/01/2018 - [AR] BugFix: Duplicate records excluded in export to HASH double accountancy
+352 09/01/2018 - [AR] BugFix: Incorrect bill lines after partial void of sale line with line discounts (VSO 1478)
+353 09/01/2018 - [AR] BugFix: Exception in back printer printing (by POS) if item is of type 'Modifyer'
+354 10/01/2018 - [AR] Count of items in POSLog (ARTS) to include bills of status 3,4 and 6 only (VSO 1400)
+355 14/01/2018 - [ER] BugFix: Handle of credit-card number in hotlist
+356 14/01/2018 - [ER] BugFix: BO stuck (transaction open) when printing second copy of invoice
+357 14/01/2018 - [ER] BugFix: Errors handling credit-tickets, voids, etc.
+358 14/01/2018 - [AR] BugFix: Upon voiding of discount while in statis-subtotal mode, the discount is not voided (VSO 1478 - point 2)
+359 16/01/2018 - [AR] BugFix: No message was displayed when selling an item which has added inputs set which does not exists
+360 16/01/2018 - [AR] BugFix: Discount not displayed when loading a voided bill if marked with out-put mode ByLine (VSO 1478 - point 1)
+361 18/01/2018 - [AR] BugFix: 2nd copy of document printed at POS printed empty (missing elements) (MC 79156)
+362 21/01/2018 - [AR] Improvement of stock order generation form (BO GUI)
+363 21/01/2018 - [AR] New POS permission added for line (item) void after FIRE (Scripts.txt)
+364 22/01/2118 - [AR] Option added to display bill transaction from customer delivery form (BO GUI)
+365 22/01/2118 - [AR] Text of buttons-bar button to display bill change to 'View bill' in many BO GUI forms
+367 22/01/2018 - [AR] Waiter enter in rest table openning dialog at POS
+368 23/01/2018 - [AR] BugFix: BO report 2nd page not always printed if subreport ends exactly at the end of the printing area (MC 79082)
+369 24/01/2018 - [AC] Added option to print invoices/delivery notes in back-office delivery shipment dialog (MC 79209)
+370 24/01/2018 - [AC] BugFix: Declaration report does not print foreign currency information correctly (VSO 1225)
+371 25/01/2018 - [ER] Improvements in ESL export (export item promo data)
+372 25/01/2018 - [AR] BugFix: After void/cancel of bill, the AutoCloseBill parameter does not work (VSO 1558)
+373 25/01/2018 - [AC] Added option to print delivery-note/invoice in back office bill display (MC 79211)
+374 25/01/2018 - [AC] BugFix: Changes to item name are not updated in finder display (MC 78985)
+375 28/01/2018 - [AR] BugFix: Hard (static) subtotal not working in static subtotal mode
+376 28/01/2018 - [AR] SVA EMV transaction void operation implemented
+377 31/01/2018 - [AR] BugFix: discount voiding due to promotions locking while in subtotal mode cause wrong bill lines in the bill (VSO 1478)
+378 31/01/2018 - [AR] BugFix: Recursive promotions locking may cause exception (VSO 1601)
+379 31/01/2018 - [AC] BugFix: Back-office document import fails when document ID is too long (MC 79397)
+380 01/02/2018 - [AR] BugFix: VATSYMBOLCOL placeholder not supported in POS documents (BLG)
+381 01/02/2018 - [AR] BugFix: When reprinting a bill of another POS/store, the bill barcode contains incorrect POS/store number (VSO 1587)
+382 04/02/2018 - [AR] BugFix: Data from POS that worked offline might not be synched to head-office (MC 79604)
+383 05/02/2018 - [ER] Translation of 2 club screens for demo of SimplyClub
+384 06/02/2018 - [AR] BugFix: CashDro4 balance validation caused POS to stuck
+385 07/02/2018 - [AR] BugFix: Cash dispenser workday balance check is done even if POS has no cashDispenser configured
+386 07/02/2018 - [AR] BugFix: Exception in CH club interface if no first name is given by the API
+387 07/02/2018 - [ER] Added option to export different layouts to eTag ESL
+388 11/02/2018 - [AR] Extra logging in SimplyClub API
+389 11/02/2018 - [ER] BugFix: Implement some fuel-system fixes in this version
+390 11/02/2018 - [ER] BugFix: Could not save layout of store, macros
+391 11/02/2018 - [ER] BugFix: [Etner] in employees shifts form opened for edit without checking permissions
+392 12/02/2018 - [AC] BugFix: Paymean with Cibus value card sometimes requieres company code when not needed (MC 80015)
+393 12/02/2018 - [AC] BugFix: Error when printing invoice/delivery note if store is marked as Head-Office but config param "headOfficeMode" (GUID 1377) is set to "None"
+394 12/02/2018 - [AR] HID devices support implemented (MSR, Scanner, RFID, MICR)
+395 13/02/2018 - [ER] Support printing with word-wrap in sale lines of items with long name
+396 13/02/2018 - [AC] Execution of stock counting in local store of head office system will cause workday data to be uploaded again to head office database (MC 80078)
+397 18/02/2018 - [AC] BugFix: Open bill is lost and not put on hold when another bill barcode is scanned (MC 80157)
+398 18/02/2018 - [AR] Price-list support added in Back Office customer orders
+399 18/02/2018 - [AR] BugFix: Exception prevented while saving an item with many additional barcodes
+400 18/02/2018 - [AR] BugFix: Exception prevented while saving a bank with many branches
+401 19/02/2018 - [AR] New added-inputs field types - Date by added/reduced days
+402 19/02/2018 - [AR] BugFix: Wrong prices in case of price-list change in BO customer order
+403 20/02/2018 - [ER] Improvements in back-printers printing by POS
+404 20/02/2018 - [AR] Improvements and bugs fixings in bank cheques printing procedure (scripts.txt)
+405 21/02/2018 - [AC] BugFix: DB Transaction remains open during import of stock orders from ProfitAgeMobile
+406 22/02/2018 - [ER] Translation of SVA printing to ENG
+407 25/02/2018 - [AR] Option added to add multiple items into labeling batch with multi selection
+408 25/02/2018 - [AR] Return ticket (item replace ticket) expiration date will not be printed if parameter of expiration perion is zero
+409 25/02/2018 - [AR] Workday closed successfully message not displayed anymore if workday was closed from BO
+410 25/02/2018 - [AR] CashDrop handling of pending transaction upon POS startup removed
+411 25/02/2018 - [ER] Support printing of item name in secondary language
+412 28/02/2018 - [ER] Support new calculation of surcharges - fixed amount if discount is less than percent
+413 04/03/2018 - [AR] New seperate BO permissions added for employees shifts view/edit
+414 05/03/2018 - [AR] BugFix: Wrong character used on sale line's 2nd line (quantity) printing in Arabic printer
+415 05/03/2018 - [AR] BugFix: Wrong total in case of merged lines voiding (due to rounding each line vs rounding the total qty) (VSO 1646) 
+416 05/03/2018 - [AC] Added support for value cards in head-office level
+417 06/03/2018 - [AC] BugFix: Exception prevented while saving a surcharge with many links
+418 07/03/2018 - [AR] EMV SVA transaction without Pinpad configuration is now supported
+419 08/03/2018 - [AR] OPOS printer errors handling improvements
+420 08/03/2018 - [AR] Option added to disable magnetic card definition in POS main form (similar to that option in barcodes definition)
+421 08/03/2018 - [AR] New field for stock order - creation method - to identify how the order was created
+422 11/03/2018 - [AR] New parameter added 'Price-override reason print mode' (VSO 1495)
+423 13/03/2018 - [AR] Invoice/delivery note creation method is now recorded in database.
+424 13/03/2018 - [AR] Option added to require invoice at POS when total sales in the bill exceeds a pre-defined amount
+444 13/03/2018 - [AC] BugFix: Payment with credit ticket could not be rolled-back (MC 80933)
+445 15/03/2018 - [AC] Splash screen will show relevant status message when login dialog is shown
+446 18/03/2018 - [AR] Improved POSData.xml writing procedure to minimize data loss in case of power failures
+447 18/03/2018 - [AR] Stock entry updated net-cost price even if distribute doc discount is off
+448 20/03/2018 - [AR] BugFix: Replication host send clear request to clients if database is not accessable during request (VSO 1652)
+449 21/03/2018 - [AR] BugFix: HID device recognition not always working
+450 21/03/2018 - [ER] BugFix: Cashdro log files are very small
+451 21/03/2018 - [ER] BugFix: Large name printing of items - printed in half-width
+452 21/03/2018 - [ER] Added option for added inputs sets for bill void and item return
+453 22/03/2018 - [AC] Implemented sync queue in head-office controller (MC 81084)
+
+**** 3.18.0 ****
+454 25/03/2018 - [AR] Pending transactions are printed separately in EFT transmition report (mini BO)
+455 25/03/2018 - [AR] Theoretical points are not printed for all customers if bill is printed before closing (draft)
+456 26/03/2018 - [AR] BugFix: Logo is not printed on credit tickets
+457 26/03/2018 - [AC] BugFix: RequestBillsUpload is called when bill cancel was cancelled (MC 81236)(VSO 1651)
+458 26/03/2018 - [AC] Added support for displaying support phone number of external value cards (MC 80738)
+459 28/03/2018 - [AR] Validation added on BO item form to prevent barcode which match barcode definition
+460 28/03/2018 - [AR] Back-office customer order form now require customer and suggest expiration date by the order type
+461 28/03/2018 - [ER] Prevent closing bill added input at EOB phase if required
+462 28/03/2018 - [AR] Main Back-office form can be maximized by double-click
+463 28/03/2018 - [ER] Add parameter to automatically void SVA credit-card transaction from memory
+464 28/03/2018 - [AR] BugFix: Customer balance dialog not loaded correctly if customer code is higher than 2147483648 (BLG)
+465 29/03/2018 - [AR] BugFix: Reserved quantitiy is validated even if value is zero causing wrong messages if quantitiy is negative
+466 01/04/2018 - [AR] New placeholder added in invoice document {ITEMSCODES} returning comma-separated list of items codes
+467 01/04/2018 - [AR] BugFix: Incorrect results were shown in promotion tracing tool at POS
+468 01/04/2018 - [AR] BackOffice promotion definition now allows empty (or zero) fields value for incentive message triggering
+469 02/04/2018 - [AR] BugFix: Customers period closing process fails if external paymean is used for the balance updates transactions
+470 03/04/2018 - [AR] BugFix: POS report preview form was always scrolled down by default
+471 03/04/2018 - [AR] BugFix: Advertising media is loaded too frequently (20 times per second) if no media files exists (VSO 1669)
+472 03/04/2018 - [AR] BO user permission added to allow columns and filter modification in catalog pricing form
+473 04/04/2018 - [AR] BugFix: Customer points not printed in bill draft (printed before closed) 
+474 04/04/2018 - [AR] BugFix: Historical SVA EFT report and date selected not correct
+475 04/04/2018 - [AR] BugFix: TS keys become visually enabled after opening and closing another TS keys set
+476 04/04/2018 - [ER] Pack SVA EMV upgrade files also according to download.xml last write time
+477 08/04/2018 - [AR] Placeholders added in document printing (POS and BO) for Positive/Negative total (BLG)
+478 08/04/2018 - [AR] Permission added to enable/disable normal sale price change at the store level
+479 08/04/2018 - [AC] Head-office controller now can run more then one instance in the same machine (MC 81224)(BLG)
+480 08/04/2018 - [AC] POS headers placeholders added for weekdays and customer birthday conditions
+481 08/04/2018 - [AC] VAT account value is now required when invoice is requested due to bill amount (over amount)
+482 09/04/2018 - [AR] BugFix: Back office keeps querying the database after opened from POS and closed (back to POS)
+483 10/04/2018 - [AC] External value card checks for zero amount transaction (MC 80709)
+484 11/04/2018 - [AR] BugFix: Scan of item inside query form does not take into account the store price-list
+485 11/04/2018 - [AR] BugFix: Exception on BackOffice startup using terminal server
+486 12/04/2018 - [AC] Added option to show all documents in back office import from ProfitAge Mobile android application
+487 12/04/2018 - [AR] BugFix: Tenders section not printed in POS reports
+488 15/04/2018 - [AR] Option added to enter back printer name as free text (to handle printer installed on client POS)
+489 17/04/2018 - [AC] Back office stores status now allows saving of configuration
+490 22/04/2018 - [AR] Filter option by first character added in POS finder
+491 22/04/2018 - [AR] New parameter to determine how (calculated) quantity mismatch in instore-codes is handled (Scripts.txt)
+492 22/04/2018 - [AR] BugFix: Timeouts extended to 20 minutes in DB tables compression tool
+493 24/04/2018 - [AC] BugFix: Replication process fails when value in tblReplicationFiles.fldDestinationPath contains fldFileName (MC 82133)
+494 24/04/2018 - [AR] Option added to define dynamic card number / ID number values in magnetic cards definition
+495 25/04/2018 - [AC] Added log debug messages to validate RFID initialization 
+496 29/04/2018 - [AC] BugFix: Code/Barcode mixup in back office price change history  window (MC 82131)(BLG)
+497 30/04/2018 - [AR] BugFix: SVA (ISR EFT) transmission was not working with non-Hebrew localization
+498 01/05/2018 - [AR] BugFix: Replication watcher crash if complex DD field is marked as replicated
+499 01/05/2018 - [AR] BugFix: Not all bill lines are printed when repronting bill draft
+500 02/05/2018 - [AR] New ini parameter for most ProfitAge applications/tools LogMilliseconds - add milliseconds to time of log entries
+501 02/05/2018 - [AC] Improvements in HQ Sync queue managment
+502 02/05/2018 - [AC] Improved support for head-office value cards (MC 65764)
+503 02/05/2018 - [AC] BugFix: Error when saving terminal name with more then 25 characters (MC 82344)
+504 04/05/2018 - [AR] Parameter added to control bill identification barcode height (Scripts.txt)
+505 06/05/2018 - [AR] Option re-added to search in BO GUI in multiple EJ files (Scripts.txt)
+506 07/05/2018 - [AR] Improved PAService (server as service) restart timing (BLG)
+507 08/05/2018 - [AR] BugFix: Sale of item in void mode was not possible
+508 08/05/2018 - [AR] BugFix: Manually added discount does not mark line as rewarded (BLG)
+509 08/05/2018 - [AR] BugFix: InstoreCode containing total amount added in void mode cause wrong bill total calculation
+510 13/05/2018 - [AC] BugFix: Data backup in head-office back office fails if terminals list contains only BO terminals (MC 82817)
+511 13/05/2018 - [AR] BugFix: Home delivery, gift voucher and warranty documents did not support large fonts printing in POS printer
+512 13/05/2018 - [AR] BugFix: Parameter 'Repeat mode' was not functional
+513 14/05/2018 - [ER] Send SMS in bulks of 4950 due to InForU limit of 5000
+514 14/05/2018 - [ER] Allow setting order line total by external system
+515 16/05/2018 - [AC] Click on customer code/name in POS opens customer query dialog (MC 82860)
+516 17/05/2018 - [AR] BugFix: Customer order total (and line total) not updated when item is added from pick-list
+517 17/05/2018 - [AC] Added support for 'Total' field in customer order items (MC 82875)
+518 21/05/2018 - [ER] Add option to display delivery route using Shlomtzion API
+519 21/05/2018 - [AC] Improved handeling of empty values in bill comments (MC 83168)
+519 21/05/2018 - [AC] BugFix: Payment with A4S value card does not always check the card balance (MC 65764)
+520 24/05/2018 - [AC] Perventing bill accounting documents to be issued in a different store (MC 77727 75335)
+521 24/05/2018 - [AR] Parameter added to control enter key behavior in BO lists + Message if searched value could not be found
+522 28/05/2018 - [AR] Option added to enter ID number in manual/Phone credit card transactions (Scripts.txt)
+523 29/05/2018 - [AC] BugFix: Filter field is not loaded in data dictionary set window in PATools
+524 30/05/2018 - [ER] Improvements in DD performance
+525 30/05/2018 - [AC] Added new parameter ValueCardLockingTimeout (MC 80701)
+526 31/05/2018 - [AR] BugFix: Total VATs base not correct in Bill printout if one of the VATs is configured not to be printed
+527 04/06/2018 - [AR] New parameter to use phone number as customer code upon customer creation
+528 04/06/2018 - [ER] Improvements in permissions by SMS - add link to approve from cellphone
+529 06/06/2018 - [AR] Home delivery rows coloring by status added in Back Office GUI
+530 06/06/2018 - [AC] Updating ExportTS values for tblWorkdaysZ record when bills are imported and marking workday to be verified (MC 83440)
+531 06/06/2018 - [AR] BugFix: Creating a delivery-note on multiple bills which has different accounting receipts fails
+532 06/06/2018 - [AC] Back office printing of delivery note will use info entered for delivery (MC 83731)
+533 07/06/2018 - [AC] BugFix: Back office import from ProfitAgeMobile cloud is called twice
+534 10/06/2018 - [AC] POS will notify the user if DC contains empty lines (MC 51049)
+534 10/06/2018 - [AR] BugFix: Incorrect time diff fields calculation in Data Dictionary if diff time is more than the current year
+535 10/06/2018 - [AR] BugFix: Comax Hebrew names export was revered if some symbols were in the name
+536 10/06/2018 - [ER] Remove need to logout BO user befor assign + BugFix
+537 12/06/2018 - [AC] Back office document import history is written to table tblDocsImportLog
+538 17/06/2018 - [AC] Head-office sync log table will keep error logs for 180 days
+539 17/06/2018 - [AR] Copy-refund of multiple bill lines now asks for return reason only once
+540 21/06/2018 - [AC] POS printing of delivery note will use info entered for delivery (MC 83771)
+541 24/06/2018 - [AC] Head-office sync process is allowed to run in server machine only (MC 84415)
+542 25/06/2018 - [AR] Item sale price and cost price are now shown in items promotion form
+543 27/06/2018 - [AC] Head-office connection will be validated when POS retrieves information items return (MC 84554)
+544 28/06/2018 - [AC] BugFix: POS tries to send messages to server when config param ConnectToServe=False
+545 01/07/2018 - [AC] Improved handeling of back office shipment opening from deliveries (MC 79811)
+546 02/07/2018 - [AC] BugFix: Customer balance update in head-office is not synced to stores (MC 84219)
+547 03/07/2018 - [AR] BugFix: Item serial number is being asked even if serial number was scanned while 'Direct serial scanning' is active
+548 03/07/2018 - [AC] BugFix: Server auto close workday configuration will close workday at the wrong time if computer time is changed (MC 79775)
+549 05/07/2018 - [AR] BugFix: Promotions by email field in customer form (BO) is not saved (BLG)
+549 09/07/2018 - [AR] New POS function to set price of item by specific price-list
+550 09/07/2018 - [AR] Price-override button now support fixed price parameter
+551 09/07/2018 - [AR] Rate situations of COMAX export failures fixed (paymean code zero)
+552 09/07/2018 - [AC] Added tblSession verification to head office workday validation process (MC 72369)
+553 11/07/2018 - [AR] Changed column caption in POS cheques printing dialog
+554 11/07/2018 - [AR] Promotion quota maximal value increased to 32000
+555 16/07/2018 - [AR] Promotion quota is now calculated from promotion start date/time + Yearly quota bug fixed
+556 16/07/2018 - [AC] Improved head office download process (MC 81704)
+557 17/07/2018 - [AR] Promotions quota message is not sent to POS server only once (per promotion)
+558 17/07/2018 - [ER] Option to see transactions, send SMS and print customers labels from ActionItems dialog
+559 18/07/2018 - [AR] Improvement in SVA EFT printout
+560 19/07/2018 - [AR] BugFix: promotions calculated on promotions - buy items in a given amount if the items got other promotions
+561 22/07/2018 - [AR] Assembly item pack/unpack now supports decimal quantities
+562 22/07/2018 - [AR] Option added to print instore-code issue time (HH:MM) on labels
+563 22/07/2018 - [AR] BugFix: Improved email validation in supplier form (Back office)
+564 25/07/2018 - [AC] BugFix: Receipt can not be produced for zero sale bill (MC 84939)
+565 26/07/2018 - [AB] Promotions campaigns management added (Back office)
+566 29/07/2018 - [AC] BugFix: Supplier data not saved when duplicating item (MC 85527)
+567 29/07/2018 - [AR] Option added to separate value-cards provided by credit card company from actual credit cards (Scripts.txt)
+568 29/07/2018 - [AR] BugFix: Extra fix for promotions calculated on promotions - buy items in a given amount if the items got other promotions (in addition to patch 560)
+569 30/07/2018 - [AR] New parameter added to allow forcing NumLock key to always be ON
+570 05/08/2018 - [AR] Improvements in Sales Summary view (Back Office)
+571 05/08/2018 - [AR] New data dictionary set to allow reports/queries on cashier's actions (entry,exit,break and return)
+572 06/08/2018 - [ER] Close X control added to finder dialog
+573 07/08/2018 - [ER] New field "Allow SMS" in instant customer creation form at POS
+574 07/08/2018 - [AR] Option added to mask credit card number by different parameters
+575 09/08/2018 - [AR] BugFix: Form data incomplete upon leaving a list cell while in edit mode
+578 13/08/2018 - [AB] New BO Form Restore CC Number
+579 19/08/2017 - [AC] BugFix: Credit ticket produced as change will get the wrong amount when regional settings numeric seperator is a comma (MC 86391)
+580 21/08/2017 - [AC] Back office promotion list now supports some properties editing (MC 85761)
+581 26/08/2018 - [AB] Cash-dispenser balance check on EOB removed in CashDro4
+582 26/08/2018 - [AC] Improvements in back-office sms template usage and display of sms send history (MC 85664)
+583 27/08/2018 - [AR] BugFix: EMV SVA upgrade was taken from server on each credit card transaction
+584 28/08/2018 - [AC] Improved support for matrix items in back-office stock documents/stock orders/stock counting (MC 86214)
+585 30/08/2018 - [AC] Improved head-office closed workday validation (MC 86714)
+586 30/08/2018 - [AC] Added option to mark work day to be validated as soon as possible in head-office (MC 86713)
+587 30/08/2018 - [AR] BugFix: Kit items not merged after bill void (VSO 1797)
+588 02/09/2018 - [AR] Item level added in Sales Summary view (Back Office) (Scripts.txt)
+589 03/09/2018 - [AC] BugFix: Error adding multiple items to finder (Back Office) (MC 86878)
+590 04/09/2018 - [AC] Added support for POS function QueryPromotionQuota (218) (MC 86853)
+591 04/09/2018 - [AC] Comax transaction export now supports customer accounting codes (MC 86852)
+592 05/09/2018 - [AC] BugFix: Empty row is inserted into tblDataBillsExt if empty comment was added at POS (MC 86963)
+593 05/09/2018 - [AR] BugFix: Expected amount in declaration section of periodic POS report was multiplied
+594 05/09/2018 - [AR] Option added to press prepack button prior to normal code sale operation (Scripts.txt)
+595 09/09/2018 - [AR] Export value cards provided by credit-card company to COMAX as type 05 instead of 02
+596 12/09/2018 - [ER] Added fields in subscription type to support replacing price by pricelist and auto use normal price without asking user
+597 13/09/2018 - [ER] Added option to calculate surcharges only on subscription usage or no-usage
+598 13/09/2018 - [ER] Added surcharges fields to executive messages
+599 16/09/2018 - [AR] BugFix: Customer update from POS was overriding expiration date even if not available in POS form and not configured in customers group
+600 16/09/2018 - [AC] Added support for merging customer cards (MC 86992)
+601 17/09/2018 - [AR] BugFix: After voiding a multiplied item which has a linked item(s) was not merged correctly
+602 18/09/2018 - [ER] Add option to run SQL commands as part of opening/closing store workday
+603 18/09/2018 - [ER] Prevent SVA transactions if POS SVA number is doesn't exist in server
+604 30/09/2018 - [ER] Add option to accept manual/phone transactions in Castles V3 device
+605 30/09/2018 - [AB] Add code column to forms: POS restraints, POS permissions, BO Permissions
+606 03/10/2018 - [AC] Added support for registering customer Tranzila tokens (MC 86854)
+607 07/10/2018 - [AC] BugFix: change to customer group discount does not change the discount for the group's customers (MC 87255)
+608 08/10/2018 - [AR] PreUpgrade and PostUpgrade scripts execution added to upgrade procedure (VSO 1722)
+609 09/10/2018 - [AB] Improve ProfitAgeMobile items batch selection form in POS (add list)
+
+**** 4.0.0 ****
+
+610 10/10/2018 - [AC] Improved report sending in charge customers-group balance process (MC 87584)
+611 14/10/2018 - [AC] BugFix: Comax import of items does not update item main supplier field tblItems.fldSupplier (MC 87914)
+612 14/10/2018 - [AR] BugFix: Customer address name handling (reverse) added in Import Lists
+613 17/10/2018 - [AR] Bill/reports printout header can be now whiteOnBlack or underlined
+614 25/10/2018 - [AC] BugFix: Value cards balance not updated correctly 
+615 31/10/2018 - [AC] BugFix: Value card issued as change is written to DC file with zero paymean code (MC 88625)
+616 01/11/2018 - [AR] Changes in ISRA-CHECK clearing API
+617 05/11/2018 - [AR] BugFix: Automatic printing of invoice at EOB fails if bill was on hold prior to closure (VSO 1851)
+618 06/11/2018 - [AR] POS function 'Set tare' to force tare selection on the next item sale
+619 07/11/2018 - [AR] Option added to mark a specific 'fixed' media device as 'removable'
+620 11/11/2018 - [AR] POS report barcode printing
+621 12/11/2018 - [AR] BugFix: Coupon printing was not based on customer language
+622 13/11/2018 - [AC] BugFix: POS asks for waiter/diners data when table bill is transfered from another POS (MC 83744)
+623 13/11/2018 - [AC] BugFix: Customer order collect related fields are not updated when using back office function ImportCustomerOrdersCollects (MC 76952)
+624 26/11/2018 - [AR] New placeholders are now supported in SQL command execution from POS
+625 26/11/2018 - [AC] ProfitAge Replication now supports PathReplace INI parameter (MC 89632)
+626 02/12/2018 - [AB] Add parameter to prevent comment from being displayed in POS bills list (MC 89219)
+627 03/12/2018 - [AC] Customer ID number field now allow up to 12 characters/digits
+628 04/12/2018 - [AC] Added support for saving multiple paymean details in customer data (MC 88027)
+629 04/12/2018 - [AC] BugFix: POS does not consider promotion end time (MC 89530)
+630 06/12/2018 - [ER] Add option to automatically send daily/monthly accountancy files by email (MC 89863)
+631 11/12/2018 - [AB] Handle replication in club fields/options updates
+632 11/12/2018 - [AR] Changes in POS forms sounds and new option to activate buzzer on any sale stopper dialog
+633 13/12/2018 - [AR] In print-on-demand mode POS now print original if bill is manually printed (VSO 1940)
+634 17/12/2018 - [AC] BugFix: Void for OneCard transaction is sent with positive amounts
+635 17/12/2018 - [AR] BugFix: Cash-dispenser change (cash-back) to another paymean payment was added in negative
+636 24/12/2018 - [AR] BugFix: Data-dictionary joins table wrongly in some cases if value was not entered to the filter (MC 89650)
+637 30/12/2018 - [ER] Add POS permission for key configuration
+638 06/01/2019 - [AR] BugFix: Adjust instore item price if assigned customer has price-list
+639 07/01/2019 - [AR] BugFix: SVA errors eliminated on credit card transaction initiation
+640 08/01/2019 - [AB] New Page "Orders Environments" in BO (ProfitAgeCustomers) + new field in tblOrder
+641 08/01/2019 - [AB] New Pages in WebApp "CreditTransmission" , "Exceptions"
+642 13/01/2019 - [AR] New column - Net cost price VAT inc. supported in stock documents
+643 14/01/2019 - [AC] BugFix: Error when handeling of zero code for new records with complex tables (MC 89746)
+644 14/01/2019 - [AC] Stock counting execution will check if all warehouses are included before reseting the stock (MC 91473)
+645 15/01/2019 - [AC] Added support to export current prices file (COMAX)(MC 92264)
+646 20/01/2019 - [AC] Added support in Back-office for importing prices into Stock documents and customer orders (MC 90793)
+647 21/01/2019 - [AC] BugFix: Back-office import of customer orders does not retrieve items data (MC 92122)
+648 22/01/2019 - [AC] Stock document execution will notify the user if any items have a price date later then the document's entry date
+649 22/01/2019 - [AC] Stock document display will color SalePrice column according to the item's price date and document's entry date
+650 27/01/2019 - [AR] GT now include the negative sales
+651 29/01/2019 - [AR] BugFix: Prevent printer error messages if printer does not support status check
+652 30/01/2019 - [AR] BugFix: Price-lists prices not cleared upon customer consign
+953 07/02/2019 - [AC] Added support for promotions item indication in stock documents extended panel (MC 91947)
+953 07/02/2019 - [AC] Added support for HQLink.ini param Tech\DisableBulk (MC 92989)
+954 11/02/2019 - [AR] Option added to enable/disable linking of unknown magnetic card to existing customer
+955 18/02/2019 - [AR] New accounting export trans type methods added (customer groups and customer types)
+956 18/02/2019 - [AR] BugFix: Declaration expected amounts and difference/shortage in BO GUI are incorect after drawer finalization
+957 18/02/2019 - [AB] Added filter Customers button in "PriceLists" and "CustomersGroups" 
+958 20/02/2019 - [AC] BugFix: POS OneCard transaction request does not contain items added with short barcodes (MC 94049)
+956 24/02/2019 - [AC] BugFix: Head-office sync does not download multi language fields (MC 94140)
+957 26/02/2019 - [AC] BugFix: Dynamic POS dialogs show overlapping fields (MC 92692,94289)
+958 26/02/2019 - [AC] BugFix: Stock document does not display saved item bonus if item quantity is zero or empty (MC 94022)
+959 04/03/2019 - [AR] BugFix: Back-office items import fails when document number is too large(2) (MC 92907)
+960 04/03/2019 - [AC] BugFix: Item's barcode leading zeros are truncated when label is printed for BO items list (MC 93204)
+961 04/03/2019 - [AR] Changes in credit card transaction types in COMAX export
+962 06/03/2019 - [AR] BugFix: Report grand-total unnecessary printed in back-office report splited on multiple pages
+963 06/03/2019 - [AR] BugFix: TS key definition from POS not correctly written to DB if parameter contains semicolon
+964 14/03/2019 - [AC] BugFix: POS removes leading zeros from Sodexo value cards (MC 95074,94725)
+965 20/03/2019 - [AC] Added support for restock documents (MC 95308)
+966 21/03/2019 - [AR] BugFix: Incorrect item qty read from instore barcode (containing only code and qty) inside query form
+967 24/03/2019 - [AR] Support 36 characters paper width in SVA EFT printouts
+968 25/03/2019 - [AR] BugFix: Customer's subscription value was not printed correctly on reprinted bills
+969 31/03/2019 - [AR] BugFIx: Pick-list of attribute element returns the attribute ID instead of the element code
+970 02/04/2019 - [ER] Improvements in interface to SimplyClub
+971 04/04/2019 - [ER] Add VAT number to item info on returns to allow return with different VAT
+972 04/04/2019 - [ER] Add time attendence export type: Ranad
+973 07/04/2019 - [AR] Option added to export EFT transactions to Balance provider (CreditMatch)
+974 15/04/2019 - [AR] BugFix: Fast sort/filter in BO lists was not functional
+975 16/04/2019 - [AC] BugFix: When saving auto-task in back office empty time values are saved as 0 (MC 95308)
+976 18/04/2019 - [AC] BugFix: ZCounters of back-office terminals remain open after workday is closed (MC 96958,97000)
+977 16/04/2019 - [AB] Added the "Enable SMS" feature within the client setup card (MC 96343)
+978 18/04/2019 - [AC] Implemented support for praxell value cards (MC 96403)
+979 21/04/2019 - [AC] Value card type can be defined without printing configuration (MC 97053)
+980 21/04/2019 - [AR] Money withdrawal POS function now supported without CashDispenser
+981 28/04/2019 - [AC] BugFix: Stock order generator does not consider item's QtyInPackage property (MC 97227)
+982 28/04/2019 - [AC] Added back-office parameter "SuggestOrderGeneration" (GUID 1986)
+983 29/04/2019 - [AR] Discount were not validated agains promotion active period
+984 29/04/2019 - [AC] Implemented support for Pelecard electronic payment (MC 96454)
+985 30/04/2019 - [ER] Add Support in Verifone TX devices
+986 01/05/2019 - [AC] Added option to update value-cards in the back-office (MC 96302)
+987 02/05/2019 - [AC] BugFix: Deleted items are added to stock order when using order generation
+988 07/05/2019 - [ER] Support export to multiple ESL files
+989 07/05/2019 - [ER] Transmit VX credit-cards transactions on POS Z
+990 07/05/2019 - [ER] Add more options to EFT customer signature mode on VX credit-cards device
+991 07/05/2019 - [ER] Write transmission reference for VX credit-cards transactions
+992 12/05/2019 - [AC] BugFix: Stock document header displays wrong source/destination when using stock order (MC 97357)
+993 13/05/2019 - [AC] Bills created via API for value cards will are written with new transaction type (MC 97839)
+994 14/05/2019 - [AC] BugFix: Back-office creation of restock documents displays messages when running as auto-task (MC 95308)(Scripts.txt)
+995 14/04/2019 - [AC] Implemented support for CreditGuard electronic payment (MC 97407)
+996 16/05/2019 - [AC] BugFix: Error printing invoice copy for empty bill (MC 98082)
+997 16/05/2019 - [AR] Improved tranaction file transfer security
+998 20/05/2019 - [AR] SVA EFT separation of specific card bankers/brands (Scripts.txt)
+999 29/05/2019 - [AR] Club card assignment / replacement dialog now supports card barcode/MSR reading
+1000 18/06/2019 - [AR] Improved BO/server load time on SQL Server 2017
+1001 18/06/2019 - [AR] BugFix: New system installation on SQL Server 2017 failed (block installation)
+1002 25/06/2019 - [AR] Zip procedure replaced (to use the old procedure set parameter 'UseSharpZip') Script.txt
+1003 27/06/2019 - [AC] BugFix: POS allows void of voided bill lines of value cards (MC 99953)
+1004 01/07/2019 - [AC] Comax transactions export will mark transactions as processed in every export (MC 100155)
+1005 01/07/2019 - [AC] Improved handeling of timeouts for internal value cards (MC 99316)
+1006 01/07/2019 - [AR] BugFix: Sales summary (drill down) view lose store selection when opening lower level
+1007 04/07/2019 - [AC] BugFix: When using F2 to select items for stock document, items are not identified by code (MC 100286)
+1008 09/07/2019 - [AR] Scales server import of sale files improved to ignore unsupported file names
+1009 09/07/2019 - [AR] Ordered items are now excluded from GT update - GT is updated only upon order pickup according to the actual supplied quantities
+1010 10/07/2019 - [AC] BugFix: Code/Barcode mixup in back-office price change documents (MC 100736)
+1011 10/07/2019 - [AR] New placeholders in SMS messages to customers (points, first name and last name)
+1012 14/07/2019 - [AC] BugFix: Runtime error when attempting to open matrix table for item with alpha-numeric code (MC 100919)
+1013 17/07/2019 - [AC] BugFix: Negative customer balance is not printed correctly in executive message when language is Hebrew (MC 101008)
+1014 18/07/2019 - [AC] BugFix: Stock counting is not synced to head-office after rollback execution (MC 101072)
+1011 25/07/2019 - [AC] BugFix: Activating value cards does not allow entering amount (MC 101403)
+1012 25/07/2019 - [AC] External value card companies list will be reloaded at POS Z close (MC 99787)
+1013 28/07/2019 - [AC] BugFix: Load of instore batch does not display correct error message when scales server is disabled (MC 101162)
+1014 29/07/2019 - [AC] BugFix: Error in head-office sync process when a language field is missing from a setup table (MC 98991)
+1015 30/07/2019 - [AC] BugFix: Auto-task is not running is time range includes midnight (MC 100521)
+1016 05/08/2019 - [AC] Improved handeling of value cards locking (MC 101732)
+1017 05/08/2019 - [AC] Improved handeling of value cards numeration (MC 101403)
+1018 05/08/2019 - [AC] If Comax files failed to upload to FTP server, transactions will not be marked as exported (MC 100330)
+1019 06/08/2019 - [AR] BugFix: Promotions not relevant to the local store are shown in item query promotions list
+1020 18/08/2019 - [AR] Fixed price (up to qty) now supports multiple activations (instances) in the same bill
+1021 18/08/2019 - [AR] Tender denominations coints calculation by scale added to POS declaration entry
+1022 21/08/2019 - [AR] BugFix: Wrong recording of installments count in EMV transactions
+1023 25/08/2019 - [AR] BugFix: Several different exceptions fixed during system backup
+1024 26/08/2019 - [AC] BugFix: Some head-office stock documents are synced to head-office and not executed (MC 103002)
+1025 28/08/2019 - [AC] Improved handeling for updates to tblReplicationSignals.fldLatestTS (MC 103198)
+1026 28/08/2019 - [AR] Improved performance of customer data retrival from server (MC 101050)
+1027 29/08/2019 - [AR] BugFix: Download of file from FTP cause the file to remain empty if doanload failed (MC 103138)
+1028 29/08/2019 - [AR] Improved handling of general customer (supporting locking, period etc.)
+1029 02/09/2019 - [AR] Extra information written to POSData file (A4SNumber, Store number and Store name)
+1030 03/09/2019 - [AR] BugFix: Exception in some cases when updating pricelist price of an item from catalog form (list)
+1031 03/08/2019 - [AC] Improved head-office workday validation process (MC 103484)
+1032 03/08/2019 - [AC] Improved error handeling in replication client
+1033 12/09/2019 - [AR] Extra validation check added at server import procedure to prevent import of cut bill (BIL record but no closing BST record)
+1034 12/09/2019 - [AR] Option added to print back printers bons separated for each item unit (MC 104078)
+1035 15/08/2019 - [AC] Added documentation for head-office related commands (MC 103118)
+1036 15/08/2019 - [AC] Head-office sync will stop if config param HeadOfficeMode (GUID 1377) is not set to 2 (MC 103654)
+1037 15/08/2019 - [AC] Improved head-office queue process (MC 97960)
+1038 24/08/2019 - [AC] Added support for Goodi external value card interface (MC 104365)(Scripts.txt)
+1039 24/08/2019 - [AC] Added support for Tenbis external value card interface (MC 104364)(Scripts.txt)
+1040 29/09/2019 - [AR] Option added to configure touch-screen button image alignment
+1041 08/10/2019 - [AR] SVA (ISR EFT) transmission now supports retries by configuration
+1042 15/10/2019 - [AC] Added "Enable package split" flag to stock order generator dialog (MC 100288)(Scripts.txt)
+1043 29/10/2019 - [AR] Recording of price-list prices history was not handled when price-list price was changed from item card
+1044 31/10/2019 - [AC] BugFix: tblTransPayments.fldBalance is updated with the wrong value for value cards when the bill contains ROA line (MC 106081)
+1045 18/11/2019 - [AC] BugFix: BCP import does not merge items by supplier (MC 107061)
+1046 21/11/2019 - [GH] Add Gross Weight field to items (MC 107139)
+1047 21/11/2019 - [AR] GUI field added in customer (multi-identitiy) form to visualize identity used amount
+1048 24/11/2019 - [GH] New form - Customer Identities List (MC 106678)
+1049 24/11/2019 - [GH] BugFix: Some fields in Customer card weren't locked in view mode 
+1050 05/12/2019 - [AR] BugFix: Scope column is not automatically filled with daily option when selecting report/query/BOlist field with scope
+1051 15/12/2019 - [AR] BugFix: Cashier/user not correctly registered for bills created from BO by the server
+1052 18/12/2019 - [AC] POS item query display now shows price per quantity unit
+1051 18/12/2019 - [AC] BugFix: Incorrect data is printed when printing of 2 (or more) labeling batches in the back-office (MC 108259)
+1052 22/12/2019 - [AR] New reward type now supported (External reward) in General/line discounts
+1053 23/12/2019 - [AR] BugFix: POS remote control was prevented from one PC to another PC in the same store if server is on another location
+1054 24/12/2019 - [ER] BugFix: Cashdro over-pay with change in machine was handled wrong
+1055 25/12/2019 - [AR] Notification at POS if EFT transactions (SVA only) were not transmitted for X days is now supported also in EMV
+1056 31/12/2019 - [AR] Reports data loading timeout increased from 2 minutes to 15 minutes
+1057 03/01/2020 - [AR] Selection of zipcode from customer form is now possible - user can select and or add zipcodes
+1058 06/01/2020 - [GH] Orders Prints mechanism improvements (MC 108664)
+1059 06/01/2020 - [AR] SVA EMV/OLD protection/isolation when server and POS has different SVA EFT configuration
+1060 08/01/2020 - [AC] BugFix: Error in back-office auto restart (MC 109643)
+1061 09/01/2020 - [AC] Added support for ROA payment by bills search (MC 108437)
+1062 12/02/2020 - [AR] Improved performance of DataDictionary queries by using INNER JOIN in more situations
+1061 12/01/2020 - [AC] Added support for timeout in external value cards (OneCard,Praxell,Tenbis)(MC 109728)
+1062 26/01/2020 - [AC] Improved head-office controler handeling of network connection issues (MC 108836)
+1063 27/01/2020 - [AC] POS will display error "Importing data at POS Server failed" when server stops import due to unbalanced bill (MC 108771)
+1064 03/02/2020 - [ER] Upgrade process moved to a background thread
+1065 04/02/2020 - [AR] Improved display of discount lines after adding multiple lines to the bill (Batch loading, customer order loading etc.)
+1066 05/02/2020 - [AC] Back-office import from terminal does not recognize alternative barcodes (MC 111021)
+1067 06/02/2020 - [ER] Added interface to Weezmo
+1068 11/02/2020 - [AC] BugFix: Simple stock counting without record in tblStockCountingsDocs can be executed (MC 111174)
+1069 11/02/2020 - [AC] Improved head-office log message for stock countings sync process (MC 111174)(Scripts.txt)
+1070 11/02/2020 - [AR] Improved TCP/IP communication disconnect detection
+1071 11/02/2020 - [AC] BugFix: Head-office command "Copy from HQ" for download tables might save incorrect values in column fldTS (MC 111236)
+1072 12/02/2020 - [ER] Add new bill line type for Spv in order to record approvals (MC 111369)
+1073 12/02/2020 - [AC] BugFix: Customer given points might be duplicated in head-office system for the first customer bill (MC 110828)
+1074 13/02/2020 - [AC] Added support for printing customer budget information in POS bill print (MC 110370)
+1075 13/02/2020 - [AC] Head-office sync handles customer identity used amount (MC 108757)
+1076 18/02/2020 - [AR] POS Represents Store parameter changed to Group represents store
+1077 19/02/2020 - [AR] BO GUI added to configure terminals groups
+1078 25/02/2020 - [AR] BugFix: SVA EFT transaction (Ribuy) were not transmitted in VPN environment
+1079 04/03/2020 - [AC] POS bills list supports display of customer identify (MC 109209)
+1080 11/03/2020 - [AR] New SVA provider added
+1081 13/04/2020 - [ER] Bill VAT printout adjustments according to regulations (MC 113899)
+1082 22/04/2020 - [AR] Option added to limit payment (of any paymean) by SQLCommand (SQL
+1083 26/04/2020 - [AR] Option added to search customer using + sign in name and address fields (search customers containing multiple expressions)
+1084 30/04/2020 - [AC] Improved RealCommerce import (MC 114512)
+1085 12/05/2020 - [AR] BugFix: Exceptions prevention added on deleted records replication procedure
+1086 13/05/2020 - [AR] BugFix: Deleted items are now excluded from POS items finder
+1087 24/05/2020 - [AR] BugFix: Failure while attempting to close store workday after closing and opening the workday in another POS
+1088 24/05/2020 - [AC] Added support for Habit payment interface (MC 114735)
+1089 24/05/2020 - [AC] Improved support for ePayment in POS (MC 115736)
+1090 25/05/2020 - [AR] Item search option added in stock document
+1091 28/05/2020 - [AR] Adjustment of banker ID in EFT (Ribuy) Dual cards and foreign cards (EMV) (MC 116087 and MC 116080)
+1092 02/06/2020 - [AR] SVA license is now required also for EMV interface (ISR EFT)
+1093 07/06/2020 - [AR] BugFix: Promotions are recalculated after start of payment in some situations
+
+**** 4.3.0 ****
+
+1094 08/06/2020 - [AR] BugFix: Limited-stock item sale reports false out-of-stock error if stock of the item is very low and decimal
+1095 08/06/2020 - [AR] BugFix: Required coupon field is now disabled and empty when promotion timing is set to 'end of bill'
+2096 16/06/2020 - [AR] Option added to configure open key set and replace key set POS function parameter as SQL statement
+2097 23/06/2020 - [AR] Option added to lookup items by full barcode even if item record has short barcode
+2098 24/06/2020 - [AR] New field in DD set 117 (Items transactions) - Return (yes/no) to indicate if item was returned
+2099 29/06/2020 - [AR] Bill time placeholder added to Invoice document layout
+2100 06/07/2020 - [AR] New direct (USB/Serial) drawer interface is now supported
+2101 08/07/2020 - [AR] BugFix: Bill files created before 4.0 cannot be loaded to the POS (Tool created to fix those bills)
+2102 11/07/2020 - [AR] BugFix: Customer defined VAT name is not printed on bill print when VAT rate is equal to default VAT rate (MC 100265)
+2103 11/07/2020 - [AR] Option added to filter back-office lists and reports using IN (one of) comparer on amount fields
+2104 16/07/2020 - [AR] Tare percent option added (Item sale and instore code printing)
+2105 20/07/2020 - [AR] BugFix: Bill line total is not updated when order line quantity isn't the same as ordered quantity
+2106 29/07/2020 - [AR] BugFix: Double promotions on same item notification not shown if only last digits of the barcode were entered
+2107 02/08/2020 - [AC] BugFix: Finder custom names are not saved when editing finder in Back-Office (MC 119306)
+2108 03/08/2020 - [AC] Added new config param 2046 "User login max retries" (MC 119796)
+2109 04/08/2020 - [AC] Added support for customer order data in loaded bills (MC 115097)
+2110 04/08/2020 - [AC] Added support for executive message when POS drawer is opened (MC 118724)
+2111 05/08/2020 - [AR] BugFix: Bill canceled after pressing sub-total not shown as voided when reloaded
+2112 06/08/2020 - [AR] BugFix: Employee shift written with wrong extra 24 hours in some system regional configurations
+2113 06/08/2020 - [AC] Improved RealCommerce import performance (MC 119944)
+2114 06/08/2020 - [AR] Blocking of SVA (ISR EFT) transmission if untransmitted transactions older than 20 days exists
+2115 09/08/2020 - [ER] Improve interface with Self Point (Validate paymean when added to bill)
+2116 10/08/2020 - [AR] Customer order is not marked as 'printed' if user canceled the printing in the preview dialog
+2117 10/08/2020 - [AR] New parameter added to disable removable media removal at end of backup
+2118 16/08/2020 - [AR] Extra added input field behavior added (Customer code) (Scripts.txt)
+2119 18/08/2020 - [ER] Added option to set BO entity defaults to prevent edit/empty values
+2120 20/08/2020 - [AC] Added new Back-office permission - SaveListFormLayout, defaults to ChangeListFormLayout (MC 120473)
+2121 24/08/2020 - [AC] ePayment transaction are now supported in export to Comax (MC 120715)
+2122 30/08/2020 - [AC] BugFix: Invoice for bill payed with ePayment does not print credit card info (MC 120485)
+2123 30/08/2020 - [AC] BugFix: ePayment bill line is commited but not displayed when failed to add change line (MC 120798)
+2124 30/08/2020 - [AC] ePayments payment lines now support tender seperation by credit card issuer (MC 120804)
+2125 31/08/2020 - [AR] BugFix: Form report second page not printed in some situations
+2126 05/09/2020 - [AR] BugFix: Employee shifts edit form (Back office) fails to save data (MC 120636)
+2127 07/09/2020 - [AC] Added new POS config parameter 'Credit Card Seperation Method' (GUID 2053)
+2128 17/09/2020 - [AC] Added support for authorization number in ePayment card transaction (MC 121859) 
+2129 23/09/2020 - [AR] New Form report element type: Image (and new Data-dictionary field type 'Path' to allow printing of images in a report
+2130 27/09/2020 - [AC] BugFix: Request to OneCard interface contained wrong line total (MC 122288)
+2131 01/10/2020 - [AC] Added new config param "ExportToAccountancyWithOpenPOS" (GUID 2055) (MC 122403) 
+2132 22/10/2020 - [AC] Points usage is not available in promotion set with "End of bill" timing (MC 123468)
+2133 22/10/2020 - [AC] Added new BO config parameter 'DefaultOrderGenerationMethod' (GUID 2059) (MC 123471)
+2134 26/10/2020 - [AR] BugFix: Table report export was not limiting maximum number of rows
+2135 28/10/2020 - [AR] BugFix: PAServer as service failed to start in some cases requiring multiple restarts
+2136 29/10/2020 - [AR] Daily customers identities budgets support added
+2137 04/11/2020 - [ER] Support detailed fields in customer delivery
+2138 05/11/2020 - [AR] BugFix: Order of buttons was wrong in Back Office question dialog - changed to [Confirm] [Cancel]
+2139 15/11/2020 - [AR] In case of two items with matching barcode (full and short) - the exact match to the entered/scanned barcode will be used
+2140 17/11/2020 - [AR] BugFix: Items created from POS are not marked as 'accumulate points' + new parameter for BO+Server+POS - 'Require return ticket by default'
+2141 19/11/2020 - [AR] Customer tranactions report (Mini BO) improved to print openning/closing balance even if no transactions exists in the selected dates
+2142 25/11/2020 - [AR] BugFix: Some tender defails are printed on accounting document for rounding paymean (which should not be printed)
+2143 06/12/2020 - [AR] New option added in 'Fixed price (Up to quantity)' promotion allowing setting the price for each included item
+2144 07/12/2020 - [AR] New parameter added to use item's external codes in sale-tickets
+2145 09/12/2020 - [AR] BugFix: Amount discount higher than the base amount was not prevented (MC 126371)
+2146 12/12/2020 - [AR] BugFix: Only one labels batch was marked as printed upon printing of multiple batches (BLG)
+2147 13/12/2020 - [AR] BugFix: Only the first labels batch is printed if the batches has custom SQL defined (MC 121364)
+2148 15/12/2020 - [AR] BugFix: Substitute prices not added/removed by promotion in case of customer assign/consign at end of bill (MC 121244)
+2149 20/12/2020 - [AR] BugFix: SVA EMV interface improvements
+2150 22/12/2020 - [AC] Added support for new POS function "Link customer order", linking new bill to retrieved customer orders (MC 126526) 
+2151 29/12/2020 - [AR] BugFix: TS keys images resizing was not working
+2152 30/12/2020 - [AR] BugFix: Store/POS workday executive message locks database tables at end of day
+2153 03/01/2021 - [AR] BugFix: Usage flags were had wring default value when creating a new paymean
+2154 03/01/2021 - [AR] Reports filter & scope are now wrapped to multiple lines if needed 
+2155 07/01/2021 - [AR] BugFix: Cash-dro change given on a non-cash-dro paymean was not handled correctly
+2156 10/01/2021 - [AR] BugFix: Write missing barcode at server parmeter was missing one digit. If parameter=6 barcodes with 6 or more digits will be updated
+2157 12/01/2021 - [AC] BugFix: Error while POS prints bill from another terminal during printing of multiple bills (MC 119009)
+2158 20/01/2021 - [AR] Option added to set line comments on sale lines / order lines at the POS
+2159 28/01/2021 - [AR] BugFix: Wrong handling of cash-dro change for non-cash paymeans (BLG)
+2160 31/01/2021 - [AR] BugFix: Wrong handling of cash-dro change in negative bill (if paymeans are manually added) (BLG)
+2161 31/01/2021 - [AR] BugFix: Some problems in money withdrawal process fixed
+2162 31/01/2021 - [AR] BugFix: Customer delivery document printout cause exception if store information (name, VAT etc.) placeholders are used in the document
+2163 03/02/2021 - [ER] Support WisePay EMV terminal by MAC address
+2164 07/02/2021 - [AR] Option added to open Backoffice as separated executable from POS by holding the Shift key
+2165 07/02/2021 - [AR] BugFix: Manual EMV transactions amount was not validated by the paymean definition
+2166 08/02/2021 - [SS] Digital Persona fingerprint reader is now supported (MC 130079)
+2167 11/02/2021 - [AC] BugFix: Direct invoicing at POS does not handle deposit for customer order (MC 113926)
+2168 07/03/2021 - [ER] Implement WisePay multi-terminal support (MC 131713)
+2169 07/03/2021 - [AR] Log header notification message written if patch is more than 1 month old
+2170 16/03/2021 - [AR] BugFix: Item price is set to zero if price was inilialized (was zero) and customer is assigned after the price entry
+2171 17/03/2021 - [AR] Improve handlig of POS number higher than 255 in BankSys interface in order to prevent exception.
+2172 21/03/2021 - [AR] BugFix: Invoice comment not printed on document when printed from POS
+2173 21/03/2021 - [AR] Credit tickets numbers are now printed on the bill printout
+2174 24/03/2021 - [AR] Option added to configure suggested items at end of bill
+2175 24/03/2021 - [AR] Content qty field in item form (Back office) will now display the weight of a unit if the item is weighable
+2176 29/03/2021 - [AR] BugFix: Quarters and zipcodes are now deleted when the city is deleted
+2177 29/03/2021 - [AC] BugFix: Credit ticket marked as 'Canceled' after it was produced for bill void (MC 111083)
+2178 01/04/2021 - [AR] BugFix: Back Office list/report filter value not cleared if the field is changed from srop-down to other data types fields (MC 128916)
+2179 04/04/2021 - [AR] BugFix: Back office name labels does not show ampersand (&) character.
+2180 08/04/2021 - [AR] Improved reports/accounting document speed by preventing printed document status check if not needed (for pdf printing for example) )(MC 133255)
+2181 12/04/2021 - [AC] BugFix: POS query form does not display item's price list (MC 113925)
+2182 13/04/2021 - [AC] Added option in HQController to mark workdays for validation (MC 91899)
+2183 13/04/2021 - [AR] Serial item returned at the POS and voiding the bill now set's the serial status to 'Sold' (MC 133769)
+2184 22/04/2021 - [AR] Option added to define tare group with manual entry of tare weight
+2185 28/04/2021 - [AR] BugFix: EOB points promotion cause wrong marking of rewarded items if the customer is not accumulating points (MC 134326)
+2186 28/04/2021 - [AR] BugFix: Wrong bill total/display when selling kit item marked to load child item's price if the child item itself has a linked item/package (134298)
+2187 04/05/2021 - [AR] BugFix: Parameter 'Always use barcode if available' is not working in some situations
+2188 11/05/2021 - [AR] Improvements in SVA EMV credit card payment (MC 133066)
+2189 13/05/2021 - [AR] BugFix: General customer name not shown in list of bills on hod at server (MC 124790)
+2190 23/05/2021 - [AR] BugFix: When double-clicking back office list row (to view/edit a record) the record form was shown minimized (MC 120459)
+2191 26/05/2021 - [AR} New placeholder in POS headers to print customer balance AFTER the current bill
+2192 27/05/2021 - [AR] BugFix: Bills are written to database without workday value if server was started after POS (MC 136280)
+2193 30/05/2021 - [AR] BugFix: Reupload of bills after printing accounting documents (invoices etc.) cause timeout at POS (MC 136292)
+2194 01/06/2021 - [AR] BugFix: Stock order warehouse not loaded correctly in back office GUI (MC 136301)
+2195 05/07/2021 - [ER] Added option to print customer monthly sales in bill printout (MC 139148)
+2196 05/07/2021 - [ER] Added option to lock customers not imported by MaxSoft plugin (MC 139121)
+2197 05/07/2021 - [AR] EMV EFT transaction entry mode (Magnetic/Contactless/Pincode/Manual/Phone/Mobile etc.) is now written to DC file
+2198 05/07/2021 - [ER] Show customer over budget/credit message on assignment if already over limit
+2199 11/07/2021 - [AR] 661 BugFix: Wide invoice/receipt document printer for direct-invoice bill ignores general customer's details (MC 138276)
+2200 12/07/2021 - [ER] Added feature: POS shift reports (MC 139628)
+2201 17/07/2021 - [ER] Added feature: POS auto collect and fast fund with default automatic amounts (MC 140098 + MC 140099)
+2202 25/07/2021 - [AR] SQL Server notification will not be added to database due to several major issues on some systems
+2203 25/07/2021 - [AR] Back-printer (POS side) performance improved (MC 140313)
+2204 24/08/2021 - [AR] BugFix: Specific paymean selection in ePayments based on card type return paymean of wrong type (MC 141054)
+2205 01/09/2021 - [AR] New option added in points double promotions handling - Unrewarded (net of points usage) (Scripts.txt)
+2206 25/10/2021 - [AR] General customer at POS now use all definition fields of the customer (message, group, type, require invoice etc.) (MC 145038)
+2207 01/11/2021 - [AR] Permission added to allow/block bills during server import error (MC 146640)
+2208 15/11/2021 - [AR] Child-items tab is now hidden in all item types except Matrix item
+2209 17/11/2021 - [AR] BugFix: After transfering bill with general customer between two POS bill may become corrupted (MC 146860)
+2210 28/11/2021 - [AR] BugFix: It is now possible to re-print accounting document if the source bill(s) were already exported
+2211 16/12/2021 - [AR] New method is now supported in parameter 'Pdf printer mode' (1907) - 'Microsoft Print to Pdf'
+2212 17/12/2021 - [AR] TS key configuration is not possible by long pressing the key on the POS screen
+2213 13/02/2022 - [ER] Support deposit and purchase tax for item, entry in stock documents and catalog item form (MC 154206)
+2214 27/02/2022 - [AR] BugFix: Order creation from POS with order type other than 1 cause duplicate order number (BLG) (MC 155033)
+2215 18/05/2022 - [AR] BugFix: Prevention of stock-document double execution (by saving the open document which was already executed) (MC 159012)
+2216 13/07/2022 - [AR] Terminal server activation code algoritem changed to support Belgian customers
+2217 31/08/2022 - [AR] Pelecard ePayment process improved (process dialog added) and timeout extended to 60 sec (MC 164139)
+2218 12/09/2022 - [AR] Voiding ePayment line or canceling a bill with ePayment is now possible (MC 164506)
+2219 13/09/2022 - [ER] Add POS function to complete ToPay amount to a specific amount
+2220 19/09/2022 - [AR] eID (Belgium) added in customer creation dialog from POS
+2221 27/10/2022 - [AR] Direct invoice 'refund note' printout is now printed with positive amounts (If the document type is negative - the amounts should be positive) (MC 166972)
+2222 14/11/2022 - [AR] Option added in POS module to work with alternative DB in case of local DB problems (MC 167934)
+2223 29/11/2022 - [ER] New licensing models with ProfitAge licenses table and POS license types: classic/Lite/Premium
+2224 29/11/2022 - [ER] Upload sales data to OLS for BI-LITE
+2225 29/11/2022 - [ER] Self-Service support improvements
+
+**** 4.4.0 ****
+
+2226 01/01/2023 - [ER] Added option: add option to save stock documents dialog filer/sort with different sets
+2227 30/01/2023 - [ER] Added option: support quick buttons for 'cheque' payment with single-immediate / single / multiple installments.
+2228 06/02/2023 - [ER] Added option: transmit WisePay EFT terminals data as part of POS workday closing
+2229 26/02/2023 - [ER] Added option: Export EFT transmissions report to ERP
+2230 26/02/2023 - [ER] Added option: Export current prices report to ERP
+2231 07/03/2023 - [ER] Added option: function to delete low price-list prices if sale-price was changed
+2232 13/03/2023 - [ER] Added option: function to check prepaid credit-card balance with VerifoneTX terminals
+2233 19/03/2023 - [ER] Added option: option to check customer's MaxCredit and Balance in Comax ERP API at assignment in POS
+2233 19/03/2023 - [ER] Added option: Periodically update all customers MaxCredit and Balance from Comax ERP API
+2234 18/04/2023 - [ER] Added option: Pay with customer credit of a customer other than assigned to bill
+2235 09/05/2023 - [ER] Added option: Load WooCommerce customer order paid with Tranzila using J5, and charge card after closing in POS
+2236 10/05/2023 - [ER] Added option: Send customers orders suggestions for alternative items
+2237 16/05/2023 - [SL] Improvements in WebShopAPI, Brand, Manufacturer, CustomersCards, etc.
+2238 18/05/2023 - [SL] Improvements in WebShopAPI - SearchItems
+2239 31/05/2023 - [SL] Improvements in WebShopAPI - GetOrders returns the delivery details
+2240 01/06/2023 - [AR] Gate opening barcode printing is now supported (MC 179450)
+2241 12/06/2023 - [ER] Add option to handle package items as linked with 'parent price loading' so promotions can be configured on price including package
+2242 15/06/2023 - [ER] Add option to handle tare weight accourding to tare-package contained qty.
+2243 29/06/2023 - [ER] in LITE version, apply TSKeySet text change in all sets
+2244 10/07/2023 - [ER] In SimplyClub interface, auto search for phone number when loading order
+2245 03/09/2023 - [ER] Added feature: support JsonPinpad EMV devices
+2246 05/09/2023 - [SL] Added feature: export orders to LionWheel
+2247 05/09/2023 - [SL] Added feature: export employees time attendance to Hilan
+2248 11/09/2023 - [SL] Added feature: support for a new value card - NedarimPlus (GetBalance, Discharge, VoidTransaction)
+2249 21/09/2023 - [SL] Added feature: new config option - enable stock docs diff handling only before execute and new fields in stock document header form (Checker and CheckStatus)
+2250 19/10/2023 - [ER] Added option: Export catalog to WOLT
+2251 19/10/2023 - [ER] Added option: Export deliveries to Bringoz OMS
+2252 20/11/2023 - [SL] Gov online invoice refernce (BO-create invoice with GOV refernce, POS-block invoice if GOV reference required)
+2253 26/11/2023 - [ER] Support 2-phase EFT execution with Verifone P400 terminals
+
+**** 5.0.0 ****
+
+2254 11/12/2023 - [ER] Support 2-phase stock doc execution with/without limbo WH
+2255 18/12/2023 - [ER] Support SimplyClub address fields: StreetNum, Entrance, Floor, Flat
+2256 25/12/2023 - [SL] Added feature: New DontCallMe interface
+2257 26/12/2023 - [SL] BugFix: Selected line color in a non graphic bill
+2258 26/12/2023 - [SL] BugFix: The default ImageSizeMode for TSKey changed to FIT
+2259 27/12/2023 - [SL] BugFix: DontCallMe - check phone numbers even if not saved to DB yet
+2260 27/12/2023 - [SL] Added feature: New option to remember users in the BO Login form (Available only in Rounded style)
+2261 10/01/2024 - [ER] Added feature: Send only late-delivery items to LionWheel
+2262 11/01/2024 - [ER] Added feature: Option to link a stock order to a stock document without adding the items automatically
+2263 14/01/2024 - [SL] BugFix: PAButtonsBar's keyboard tags moved toward the center in wide buttons
+2264 28/01/2024 - [SL] Added feature: Save\load picklist's layout and set a default layout for a single user or for all users
+2265 30/01/2024 - [ER] Added feature: Sale-Grades system added
+2266 12/02/2024 - [ER] Added feature: Category late-delivery warehouse
+2267 14/02/2024 - [ER] Added feature: City delivery comment
+2268 10/03/2024 - [SL] BugFix: Save\load picklist's layout handaling minimized forms that were opened by another user
+2269 27/03/2024 - [SL] BugFix: Keys are missing in the keyspanel that opens after a scrollable keyspanel
+2270 10/04/2024 - [SL] BugFix: ExtraButtonsPanel flickering once a while in Self Service terminal
+2271 24/04/2024 - [ER] Added feature: HAAT integration
+2272 24/04/2024 - [ER] Added feature: advanced subscribtion system
+2273 07/05/2024 - [SL] BugFix: CreditTypeSelectionForm looked strange in Rounded style
+2274 21/05/2024 - [SL] BugFix: Finders with many items slowed down the system
+
+**** 5.1.0 ****
+
+2275 29/05/2024 - [SL] GOV online invoice default URLs changed & emergency invoice reference disabled
+2276 03/06/2024 - [SL] BugFix: In CashierScreenStyle = FullWidthExtraButtons the pckeyboard was not in the right location
+2277 08/07/2024 - [ER] Added ability to load automatic orders by POS number
+2278 31/07/2024 - [SL] New "Gray and Blue" POS color scheme
+2279 05/08/2024 - [AR] Parameter (GUID 2232) added to allow accounting document series for multi-store systems (If set - series will be Store+Terminal) (MC 203762)
+2280 18/08/2024 - [AR] Improvement in SVA EMV transaction processing - multi line status description is supported from now on (MC 204335)
+2281 09/09/2024 - [ER] Add option to validate phone number by regex
+2282 11/09/2024 - [SL] Improved KeyPanel - Rounded button, Rounded corners buttons,Panel's back color
+2283 25/09/2024 - [ER] Add option to suggest delivery entry on bill start and validate late-delivery items in delivery bill
+2284 18/11/2024 - [ER] Support manual barcode entry in input dialog args
+2285 25/11/2024 - [ER] Option added to prevent secondary quantity for instore-codes (MC 210078)
+2286 02/12/2024 - [ER] Option to exclude cashier from automatic suggestion of action-items at end of bill
+2287 09/12/2024 - [SL] Text color of bill's totals has changed
+2288 09/12/2024 - [SL] GOV Online invoice reference - V2
+2289 17/12/2024 - [ER] Add option to view customer history in Back-Office in Lines mode or bill mode
+2290 18/12/2024 - [ER] Add option to view customer history in POS in Lines mode or bill mode
+2291 25/12/2024 - [SL] GOV Online invoice reference placeholder - print text on invoice for unapproved invoices
+2292 14/01/2025 - [ER] Add option to calculate surcharges by supplier
+2293 30/01/2025 - [SL] Open WhatsApp url for a customer from BO
+2294 30/01/2025 - [SL] Assign customer to POS from BO
+2295 11/02/2025 - [AR] Promotions are re-validated (including shown messages) when loading historic (closed) bill at POS (MC 215487)
+2296 04/03/2025 - [SL] Added feature: support for a new value card - Verifone (GetBalance, Discharge, VoidTransaction)
+2297 05/03/2025 - [SL] Open Telegram url for a customer from BO
+2298 13/03/2025 - [SL] Added feature: support for a new value card - KashCash (Discharge, VoidTransaction)
+2299 30/03/2025 - [ER] Support getting delivery WH,Route,Date from courier plugin
+2300 30/03/2025 - [AR] Support ValueCards usage using Verifone GateWay API
+2301 09/04/2025 - [ER] Support download of ERP item stock from HQ to stores
+2302 11/05/2025 - [SL] Print reports from Service on a different process
+2303 13/05/2025 - [SL] BugFix: Print preview form was hidden behind other forms in MultiDialog mode

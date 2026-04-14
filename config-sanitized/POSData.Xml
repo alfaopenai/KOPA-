@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<POSData>
+  <POSNumber>1</POSNumber>
+  <ActiveBillNumber>0</ActiveBillNumber>
+  <NextBillNumber>1</NextBillNumber>
+  <ActiveCashier>0</ActiveCashier>
+  <WorkDayCounter>0</WorkDayCounter>
+  <ZCounter>0</ZCounter>
+  <GT>0</GT>
+  <GTPrv>0</GTPrv>
+  <TrainingMode>0</TrainingMode>
+  <EODStatus>99</EODStatus>
+  <CashierBreak>0</CashierBreak>
+  <NextCreditTicketNumber>0</NextCreditTicketNumber>
+  <NextCustomerDeliveryNumber>0</NextCustomerDeliveryNumber>
+  <NextValueCardNumber>0</NextValueCardNumber>
+  <LastSession>0</LastSession>
+  <SessionNumber>0</SessionNumber>
+  <DeclarationMethod>3</DeclarationMethod>
+  <NextWPSaleNumber>1</NextWPSaleNumber>
+  <NextInvoiceNumber>0</NextInvoiceNumber>
+  <NextRefundNoteNumber>0</NextRefundNoteNumber>
+  <NextInvoiceReceiptNumber>0</NextInvoiceReceiptNumber>
+  <NextReceiptNumber>0</NextReceiptNumber>
+  <NextDeliveryNoteNumber>0</NextDeliveryNoteNumber>
+  <NextReturnNoteNumber>0</NextReturnNoteNumber>
+  <NextInvoiceBillNumber>0</NextInvoiceBillNumber>
+  <NextItemSaleTicketNumber>0</NextItemSaleTicketNumber>
+  <CloseRequest>0</CloseRequest>
+  <StoreNumber>1</StoreNumber>
+  <A4SNumber>&lt;REDACTED_STORE_ID&gt;</A4SNumber>
+</POSData>
