@@ -22,6 +22,11 @@ Included folders:
 - `runtime-notes/` - startup and terminal mapping notes
 - `ui-layout/` - customer display and printer control layout/config
 
+Recommended reading order:
+- `PROMPT_FOR_AI.md`
+- `docs/SYSTEM_OVERVIEW_AND_OMISSIONS.md`
+- `docs/EXTRA_CONTEXT_NOTES.md`
+
 Observed version:
 - `Version 5.1.0 Patch 131`
 - Dated `2026-02-17` in the local `ReadMe.txt`

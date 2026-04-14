@@ -14,6 +14,7 @@ What is included:
 - Runtime module inventories derived from local EXE/DLL names
 - Safe import format examples (headers/types only)
 - UI layout and startup notes
+- A repository-level system overview explaining what was omitted and why
 
 What is not included:
 - Executables and DLLs
@@ -29,3 +30,5 @@ Please answer in this order:
 4. What exact missing artifacts are needed for real implementation work
 5. Which files in this package are the most important to inspect first
 6. Which runtime modules and database tables look most relevant to payment development
+
+Read `docs/SYSTEM_OVERVIEW_AND_OMISSIONS.md` before answering.
