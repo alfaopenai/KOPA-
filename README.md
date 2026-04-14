@@ -17,6 +17,10 @@ Included folders:
 - `db-scripts/` - SQL scripts found in setup
 - `config-sanitized/` - config files with sensitive values redacted
 - `payment-integration/` - payment-related header files
+- `db-metadata/` - extracted table/field inventories and runtime module inventories
+- `import-format-examples/` - safe import format examples (headers/types only)
+- `runtime-notes/` - startup and terminal mapping notes
+- `ui-layout/` - customer display and printer control layout/config
 
 Observed version:
 - `Version 5.1.0 Patch 131`

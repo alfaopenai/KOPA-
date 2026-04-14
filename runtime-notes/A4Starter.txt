@@ -1,0 +1,3 @@
+ProfitAgeServer.exe|/A
+Sleep(5000)
+ProfitAge.exe

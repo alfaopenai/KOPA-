@@ -1,0 +1,2 @@
+﻿SUPPLIERID,SUPPLIERNAME,Address,Locked,Phone1,Phone2,Fax,e-mail,ConName,BisNum,1
+NUMERIC,TEXT,Test,0 OR 1,Text,Text,Text,Text,Text,Text,1

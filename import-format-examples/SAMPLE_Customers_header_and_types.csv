@@ -1,0 +1,2 @@
+﻿Code,Name,Group,Balance,MaximumCredit,Locked,Phone1,Phone2,Address,VATAccount,QuickMessage,Email
+Numeric,First Last,Numeric,Numeric,Numeric,0 or 1,Text,text,Text,Text,Text,Text
