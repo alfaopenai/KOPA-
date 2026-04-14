@@ -1,0 +1,128 @@
+﻿42: 040 26/04/2017 - BugFix: Card number field is hidden for CHePay value card issue for refund bill (VSO 773)
+43: 041 26/04/2017 - BugFix: Incorrect window caption when issue A4S value card for refund (Scripts.txt)
+55: 053 04/05/2017 - BugFix: Error voiding CHePay EFT partial payment causes bill to disappear (VSO 776)
+57: 055 07/05/2017 - Paymean validation added when setting bill type (MC 69703, VSO 680)
+58: 056 08/05/2017 - BugFix: Paymean transactions written to DB with the value 'NULL' as the number (VSO 811)
+106: 102 04/06/2017 - BugFix: POS declaration report is missing some amounts when cash paymean group flag "Declare per group" is true (MC 70251)
+110: 106 06/06/2017 - Option added to always hide full credit card number on signatre ticket (Scripts.txt) (SVA)
+117: 113 11/06/2017 - Improved support for cibus Sodexo
+119: 115 12/06/2017 - BugFix: POS declaration uses paymean name for paymean group when declaration is done by grouping (MC 70251)
+122: 118 12/06/2017 - BugFix: Clearing cell in PAList control does not raise CellTextModified event (MC 70459)
+128: 124 15/06/2017 - Improved support for external Israeli value cards
+129: 125 15/06/2017 - Improved support for offline value cards issue
+137: 001 19/06/2017 - [AC] Head-office sync will not validate workdays that have credit card transactions that were not transmited
+143: 007 20/06/2017 - [AR] Improvements in COMAX export (Merge rounding paymean, export of discounts etc.)
+169: 125 06/07/2017 - [AC] BugFix: Payments with external value cards might cause server import error
+170: 126 06/07/2017 - [AC] POS training mode supports external value cards
+181: 137 16/07/2017 - [AC] Added support for transmitting EFT for multiple terminals
+221: 177 01/08/2017 - [AC] External value cards take input amount when used with magnetic card
+222: 178 03/08/2017 - [AR] Improvements in SVA EMV (ISR) interface - EMV approval!
+226: 182 07/08/2017 - [AC] BugFix: EFT transmission at workday opening displays wrong message text (MC 72756)
+233: 189 13/08/2017 - [AR] SHVA EMV EFT release
+254: 210 23/08/2017 - [AC] BugFix: EFT error is displayed when workday is closed by remote
+259: 213 24/08/2017 - [AC] BugFix: POS uses incorrect amount for for magnetic value cards when config param "ManualDecimalAmount" (1135) = True
+273: 227 07/09/2017 - [AR] BugFix: Not possible to void value-card which is marked to prevent bill void/cancel even if the value card was voided (VSO 994)
+278: 232 12/09/2017 - [AC] Improved handeling of external value cards initiation
+338: 292 23/11/2017 - [AC] BugFix: Z-Report journal transaction section is devided when paymean configured in CSHPAY belongs to a different paymean group (VSO 1315)
+352: 306 30/11/2017 - [AC] Added support for sodexo (cibus) company cards
+368: 322 13/12/2017 - [ER] Make SVA EMV work faster
+387: 341 01/01/2018 - [AR] BugFix: Exception on SVA EMV EFT ticket printing if phone number is included in the printout
+388: 342 02/01/2018 - [AR] Improved logging of potential problems in SVA EMV interface (POS+Server)
+396: 350 07/01/2018 - [AC] BugFix: When scanning value card with use mode "Unload" the POS uses all the card loaded balance (MC 78695)(BLG)
+401: 355 14/01/2018 - [ER] BugFix: Handle of credit-card number in hotlist
+421: 376 28/01/2018 - [AR] SVA EMV transaction void operation implemented
+437: 392 12/02/2018 - [AC] BugFix: Paymean with Cibus value card sometimes requieres company code when not needed (MC 80015)
+451: 406 22/02/2018 - [ER] Translation of SVA printing to ENG
+461: 416 05/03/2018 - [AC] Added support for value cards in head-office level
+463: 418 07/03/2018 - [AR] EMV SVA transaction without Pinpad configuration is now supported
+482: 454 25/03/2018 - [AR] Pending transactions are printed separately in EFT transmition report (mini BO)
+486: 458 26/03/2018 - [AC] Added support for displaying support phone number of external value cards (MC 80738)
+491: 463 28/03/2018 - [ER] Add parameter to automatically void SVA credit-card transaction from memory
+497: 469 02/04/2018 - [AR] BugFix: Customers period closing process fails if external paymean is used for the balance updates transactions
+502: 474 04/04/2018 - [AR] BugFix: Historical SVA EFT report and date selected not correct
+504: 476 04/04/2018 - [ER] Pack SVA EMV upgrade files also according to download.xml last write time
+511: 483 10/04/2018 - [AC] External value card checks for zero amount transaction (MC 80709)
+525: 497 30/04/2018 - [AR] BugFix: SVA (ISR EFT) transmission was not working with non-Hebrew localization
+530: 502 02/05/2018 - [AC] Improved support for head-office value cards (MC 65764)
+539: 511 13/05/2018 - [AR] BugFix: Home delivery, gift voucher and warranty documents did not support large fonts printing in POS printer
+548: 519 21/05/2018 - [AC] BugFix: Payment with A4S value card does not always check the card balance (MC 65764)
+551: 522 28/05/2018 - [AR] Option added to enter ID number in manual/Phone credit card transactions (Scripts.txt)
+582: 551 09/07/2018 - [AR] Rate situations of COMAX export failures fixed (paymean code zero)
+590: 559 18/07/2018 - [AR] Improvement in SVA EFT printout
+598: 567 29/07/2018 - [AR] Option added to separate value-cards provided by credit card company from actual credit cards (Scripts.txt)
+605: 574 07/08/2018 - [AR] Option added to mask credit card number by different parameters
+612: 583 27/08/2018 - [AR] BugFix: EMV SVA upgrade was taken from server on each credit card transaction
+624: 595 09/09/2018 - [AR] Export value cards provided by credit-card company to COMAX as type 05 instead of 02
+632: 603 18/09/2018 - [ER] Prevent SVA transactions if POS SVA number is doesn't exist in server
+646: 614 25/10/2018 - [AC] BugFix: Value cards balance not updated correctly
+647: 615 31/10/2018 - [AC] BugFix: Value card issued as change is written to DC file with zero paymean code (MC 88625)
+648: 616 01/11/2018 - [AR] Changes in ISRA-CHECK clearing API
+660: 628 04/12/2018 - [AC] Added support for saving multiple paymean details in customer data (MC 88027)
+667: 635 17/12/2018 - [AR] BugFix: Cash-dispenser change (cash-back) to another paymean payment was added in negative
+671: 639 07/01/2019 - [AR] BugFix: SVA errors eliminated on credit card transaction initiation
+697: 961 04/03/2019 - [AR] Changes in credit card transaction types in COMAX export
+700: 964 14/03/2019 - [AC] BugFix: POS removes leading zeros from Sodexo value cards (MC 95074,94725)
+703: 967 24/03/2019 - [AR] Support 36 characters paper width in SVA EFT printouts
+709: 973 07/04/2019 - [AR] Option added to export EFT transactions to Balance provider (CreditMatch)
+714: 978 18/04/2019 - [AC] Implemented support for praxell value cards (MC 96403)
+715: 979 21/04/2019 - [AC] Value card type can be defined without printing configuration (MC 97053)
+720: 984 29/04/2019 - [AC] Implemented support for Pelecard electronic payment (MC 96454)
+721: 985 30/04/2019 - [ER] Add Support in Verifone TX devices
+725: 989 07/05/2019 - [ER] Transmit VX credit-cards transactions on POS Z
+726: 990 07/05/2019 - [ER] Add more options to EFT customer signature mode on VX credit-cards device
+727: 991 07/05/2019 - [ER] Write transmission reference for VX credit-cards transactions
+729: 993 13/05/2019 - [AC] Bills created via API for value cards will are written with new transaction type (MC 97839)
+731: 995 14/04/2019 - [AC] Implemented support for CreditGuard electronic payment (MC 97407)
+734: 998 20/05/2019 - [AR] SVA EFT separation of specific card bankers/brands (Scripts.txt)
+739: 1003 27/06/2019 - [AC] BugFix: POS allows void of voided bill lines of value cards (MC 99953)
+741: 1005 01/07/2019 - [AC] Improved handeling of timeouts for internal value cards (MC 99316)
+751: 1011 25/07/2019 - [AC] BugFix: Activating value cards does not allow entering amount (MC 101403)
+752: 1012 25/07/2019 - [AC] External value card companies list will be reloaded at POS Z close (MC 99787)
+756: 1016 05/08/2019 - [AC] Improved handeling of value cards locking (MC 101732)
+757: 1017 05/08/2019 - [AC] Improved handeling of value cards numeration (MC 101403)
+762: 1022 21/08/2019 - [AR] BugFix: Wrong recording of installments count in EMV transactions
+778: 1038 24/08/2019 - [AC] Added support for Goodi external value card interface (MC 104365)(Scripts.txt)
+779: 1039 24/08/2019 - [AC] Added support for Tenbis external value card interface (MC 104364)(Scripts.txt)
+781: 1041 08/10/2019 - [AR] SVA (ISR EFT) transmission now supports retries by configuration
+784: 1044 31/10/2019 - [AC] BugFix: tblTransPayments.fldBalance is updated with the wrong value for value cards when the bill contains ROA line (MC 106081)
+797: 1055 25/12/2019 - [AR] Notification at POS if EFT transactions (SVA only) were not transmitted for X days is now supported also in EMV
+801: 1059 06/01/2020 - [AR] SVA EMV/OLD protection/isolation when server and POS has different SVA EFT configuration
+805: 1061 12/01/2020 - [AC] Added support for timeout in external value cards (OneCard,Praxell,Tenbis)(MC 109728)
+822: 1078 25/02/2020 - [AR] BugFix: SVA EFT transaction (Ribuy) were not transmitted in VPN environment
+824: 1080 11/03/2020 - [AR] New SVA provider added
+826: 1082 22/04/2020 - [AR] Option added to limit payment (of any paymean) by SQLCommand (SQL
+833: 1089 24/05/2020 - [AC] Improved support for ePayment in POS (MC 115736)
+835: 1091 28/05/2020 - [AR] Adjustment of banker ID in EFT (Ribuy) Dual cards and foreign cards (EMV) (MC 116087 and MC 116080)
+836: 1092 02/06/2020 - [AR] SVA license is now required also for EMV interface (ISR EFT)
+861: 2114 06/08/2020 - [AR] Blocking of SVA (ISR EFT) transmission if untransmitted transactions older than 20 days exists
+862: 2115 09/08/2020 - [ER] Improve interface with Self Point (Validate paymean when added to bill)
+868: 2121 24/08/2020 - [AC] ePayment transaction are now supported in export to Comax (MC 120715)
+869: 2122 30/08/2020 - [AC] BugFix: Invoice for bill payed with ePayment does not print credit card info (MC 120485)
+870: 2123 30/08/2020 - [AC] BugFix: ePayment bill line is commited but not displayed when failed to add change line (MC 120798)
+871: 2124 30/08/2020 - [AC] ePayments payment lines now support tender seperation by credit card issuer (MC 120804)
+874: 2127 07/09/2020 - [AC] Added new POS config parameter 'Credit Card Seperation Method' (GUID 2053)
+875: 2128 17/09/2020 - [AC] Added support for authorization number in ePayment card transaction (MC 121859)
+889: 2142 25/11/2020 - [AR] BugFix: Some tender defails are printed on accounting document for rounding paymean (which should not be printed)
+896: 2149 20/12/2020 - [AR] BugFix: SVA EMV interface improvements
+900: 2153 03/01/2021 - [AR] BugFix: Usage flags were had wring default value when creating a new paymean
+902: 2155 07/01/2021 - [AR] BugFix: Cash-dro change given on a non-cash-dro paymean was not handled correctly
+906: 2159 28/01/2021 - [AR] BugFix: Wrong handling of cash-dro change for non-cash paymeans (BLG)
+907: 2160 31/01/2021 - [AR] BugFix: Wrong handling of cash-dro change in negative bill (if paymeans are manually added) (BLG)
+910: 2163 03/02/2021 - [ER] Support WisePay EMV terminal by MAC address
+912: 2165 07/02/2021 - [AR] BugFix: Manual EMV transactions amount was not validated by the paymean definition
+915: 2168 07/03/2021 - [ER] Implement WisePay multi-terminal support (MC 131713)
+935: 2188 11/05/2021 - [AR] Improvements in SVA EMV credit card payment (MC 133066)
+944: 2197 05/07/2021 - [AR] EMV EFT transaction entry mode (Magnetic/Contactless/Pincode/Manual/Phone/Mobile etc.) is now written to DC file
+951: 2204 24/08/2021 - [AR] BugFix: Specific paymean selection in ePayments based on card type return paymean of wrong type (MC 141054)
+964: 2217 31/08/2022 - [AR] Pelecard ePayment process improved (process dialog added) and timeout extended to 60 sec (MC 164139)
+965: 2218 12/09/2022 - [AR] Voiding ePayment line or canceling a bill with ePayment is now possible (MC 164506)
+978: 2228 06/02/2023 - [ER] Added option: transmit WisePay EFT terminals data as part of POS workday closing
+979: 2229 26/02/2023 - [ER] Added option: Export EFT transmissions report to ERP
+982: 2232 13/03/2023 - [ER] Added option: function to check prepaid credit-card balance with VerifoneTX terminals
+996: 2245 03/09/2023 - [ER] Added feature: support JsonPinpad EMV devices
+999: 2248 11/09/2023 - [SL] Added feature: support for a new value card - NedarimPlus (GetBalance, Discharge, VoidTransaction)
+1004: 2253 26/11/2023 - [ER] Support 2-phase EFT execution with Verifone P400 terminals
+1037: 2280 18/08/2024 - [AR] Improvement in SVA EMV transaction processing - multi line status description is supported from now on (MC 204335)
+1053: 2296 04/03/2025 - [SL] Added feature: support for a new value card - Verifone (GetBalance, Discharge, VoidTransaction)
+1055: 2298 13/03/2025 - [SL] Added feature: support for a new value card - KashCash (Discharge, VoidTransaction)
+1057: 2300 30/03/2025 - [AR] Support ValueCards usage using Verifone GateWay API

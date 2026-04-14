@@ -12,6 +12,7 @@ What is included:
 - Wisepay pin-pad header files
 - Extracted database table/field inventories from `Setup/Data.xml`
 - Runtime module inventories derived from local EXE/DLL names
+- A focused `ePayment` evidence pack with release-note extracts, schema subsets, and payment binary inventories
 - Safe import format examples (headers/types only)
 - UI layout and startup notes
 - A repository-level system overview explaining what was omitted and why

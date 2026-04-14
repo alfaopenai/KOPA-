@@ -18,6 +18,7 @@ Included folders:
 - `config-sanitized/` - config files with sensitive values redacted
 - `payment-integration/` - payment-related header files
 - `db-metadata/` - extracted table/field inventories and runtime module inventories
+- `epayment-focus/` - focused evidence pack for ePayment and payment-adjacent architecture
 - `import-format-examples/` - safe import format examples (headers/types only)
 - `runtime-notes/` - startup and terminal mapping notes
 - `ui-layout/` - customer display and printer control layout/config
@@ -25,6 +26,7 @@ Included folders:
 Recommended reading order:
 - `PROMPT_FOR_AI.md`
 - `docs/SYSTEM_OVERVIEW_AND_OMISSIONS.md`
+- `epayment-focus/EPAYMENT_FOCUS.md`
 - `docs/EXTRA_CONTEXT_NOTES.md`
 
 Observed version:
